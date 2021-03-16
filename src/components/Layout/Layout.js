@@ -10,7 +10,7 @@ const Layout = ({children})=>{
             <Drawer />
             {children}
         </div>
-    )
+    );
 }
 
 export default Layout;
