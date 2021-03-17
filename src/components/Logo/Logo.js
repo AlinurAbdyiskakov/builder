@@ -1,10 +1,12 @@
 import classes from "./Logo.module.css";
-
+import logo from "../../imges/logo.svg";
+// import logo from "../../imges/logo.svg1.webp";
 
 const Logo = ()=> {
     return(
         <div className={classes.Logo}>
-  <img src="./img/logo1.jpg"></img>
+  <img src={logo}/>
+  <span>animal horse</span>
         </div>
     );
 }

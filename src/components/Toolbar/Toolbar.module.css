@@ -3,11 +3,13 @@
     justify-content: space-between;
 
     background-color: tomato;
+    border: dashed 5px blue;
     font-size: 30px;
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 15px;
     position: sticky;
     top:0;
     left:0;
-    box-shadow: 0 0  19px rgb(12, 177, 12);
+    box-shadow: 0 0  50px rgb(12, 177, 12);
 }
