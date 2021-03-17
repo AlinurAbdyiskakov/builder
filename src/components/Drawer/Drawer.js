@@ -5,7 +5,7 @@ import Nav from "../Nav/Nav";
 const Drawer = ()=> {
     return(
         <div className={classes.Drawer}>
-           
+           <Logo/>
             <Nav/>
         </div>
     );

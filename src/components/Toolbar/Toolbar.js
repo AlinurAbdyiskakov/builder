@@ -6,7 +6,7 @@ const Toolbar = ()=>{
     return(
         <div className={classes.Toolbar}>
             <Logo/>
-           
+            <Nav/>
         </div>
     );
 }
