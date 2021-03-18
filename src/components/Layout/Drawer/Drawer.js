@@ -1,24 +1,24 @@
-
-import classes from "./Drawer.module.css";
+import Logo from "../../Logo/Logo";
 import Nav from "../../Nav/Nav";
+import classes from "./Drawer.module.css";
 
+const Drawer = ({ open }) => {
+  const drawerClasses = [classes.content];
+  if (open) {
+    drawerClasses.push(classes.open);
+  }
+  else {
+    drawerClasses.push(classes.closed);
+  }
 
-const Drawer = ({open})=> {
-    const drowerClasses=[classes.content];
-    if(open){
-         drowerClasses.push(classes.open)
-
-    }
-    else{
-        drowerClasses.push(classes.closed)
-    }
-    return(
-        <div className={classes.Drawer}>
-        <div className={drowerClasses.join(" ")}>
-            <Nav/>
-            </div>
-        </div>
-    );
+  return (
+    <div className={classes.Drawer}>
+      <div className={drawerClasses.join(" ")}>
+        <Logo />
+        <Nav />
+      </div>
+    </div>
+  );
 }
-
+ 
 export default Drawer;
