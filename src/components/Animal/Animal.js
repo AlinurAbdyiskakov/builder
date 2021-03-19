@@ -4,8 +4,9 @@ import AnimalPreview from "./AnimalPreview/AnimalPreview";
 const Animal = () => {
   return (
     <div className={classes.Animal}>
+    
+     <AnimalPreview/> 
      <AnimalControls/>
-     <AnimalPreview/>
     </div>
   );
 }
