@@ -1,0 +1,7 @@
+.Animal{
+display: flex;
+justify-content: space-evenly;
+flex-direction: row-reverse;
+margin: 1rem;
+flex-wrap: wrap;
+}
