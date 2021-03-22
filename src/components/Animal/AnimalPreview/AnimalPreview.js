@@ -1,5 +1,6 @@
-import classes from "./AnimalPreview.module.css";
 import AnimalAll from"../AnimalAll/AnimalAll";
+import classes from "./AnimalPreview.module.css";
+
 const AnimalPreview = () => {
   return (
     <div className={classes.AnimalPreview}>
