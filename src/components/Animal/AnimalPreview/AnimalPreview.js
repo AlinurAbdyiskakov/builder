@@ -5,9 +5,12 @@ const AnimalPreview = () => {
   return (
     <div className={classes.AnimalPreview}>
      <div  className={ classes.color}>
-         <AnimalAll type="regf"/>
-         <AnimalAkl type="regf"/>
-         <AnimalAml type="regf"/>
+         <AnimalAll type="Dog"/>
+         {/* <AnimalAll type="cat"/>
+         <AnimalAll type="pig"/>
+         <AnimalAll type="cou"/> */}
+         {/* <AnimalAkl type="regf"/>
+         <AnimalAml type="regf"/> */}
      </div>
     </div>
   );
