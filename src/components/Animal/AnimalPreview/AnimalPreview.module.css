@@ -1,13 +1,4 @@
-.AnimalPreview{
-    margin-top: 0px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .color{
 
     height: 400px;
