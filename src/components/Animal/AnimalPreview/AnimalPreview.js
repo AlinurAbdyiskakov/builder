@@ -1,12 +1,12 @@
 import AnimalAll from"../AnimalAll/AnimalAll";
 import classes from "./AnimalPreview.module.css";
-import ingredientsBackground from "../../../imges/maiak.svg";
+
 
 const AnimalPreview = ({ animalAlls }) => {
   const result = [];
-  for (const animalAll in animalAlls) {
-    for (let i = 0; i < animalAlls[animalAll]; i++) {
-      result.push(<AnimalAll type={animalAll} />)
+  for (const ingredient in animalAlls) {
+    for (let i = 0; i < animalAlls[ingredient]; i++) {
+      result.push(<AnimalAll type={animalAlls} />)
     }
   }
 
@@ -14,7 +14,7 @@ const AnimalPreview = ({ animalAlls }) => {
     <div className={classes.PizzaPreview}>
       <div
         className={classes.ingredients}
-        style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+        style={{ backgroundImage: `url(${animalAllsBackground})` }}>
         {result}
       </div>
     </div>

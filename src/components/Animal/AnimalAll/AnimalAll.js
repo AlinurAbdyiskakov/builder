@@ -1,3 +1,4 @@
+  
 import classes from "./AnimalAll.module.css";
 
 import salamiBackground from "../../../imges/logo.svg";
