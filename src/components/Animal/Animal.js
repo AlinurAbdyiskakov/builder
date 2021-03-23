@@ -3,12 +3,12 @@ import AnimalControls from "./AnimalControls/AnimalControls";
 import AnimalPreview from "./AnimalPreview/AnimalPreview";
 const Animal = () => {
   const ingredients = {
-    tomato: 20,
-    salami: 20,
-    greenOlive: 20,
-    blackOlive: 20,
-    redPepper: 20,
-    yellowPepper: 15,
+    Dog: 20,
+    cat: 20,
+    pige: 20,
+    horse: 20,
+   ship: 20,
+   cou: 15,
   };
 
   return (
