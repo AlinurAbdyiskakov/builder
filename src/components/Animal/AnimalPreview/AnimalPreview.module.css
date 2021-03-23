@@ -6,3 +6,10 @@
     background-color: chartreuse;
    
 }
+.color{
+    /* flex: 370px; */
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+   
+}
