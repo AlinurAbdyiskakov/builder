@@ -5,7 +5,7 @@ const AnimalPreview = () => {
   return (
     <div className={classes.AnimalPreview}>
      <div  className={ classes.color}>
-       
+     
          <AnimalAll type="boat"/>
          <AnimalAll type="boat"/>
          <AnimalAll type="boat"/>
