@@ -1,12 +1,12 @@
 import classes from "./Logo.module.css";
-import logo from "../../imges/logo2.svg";
+import logo from "../../imges/logo-Animal-shop.jpg";
 
 
 const Logo = ()=> {
     return(
         <div className={classes.Logo}>
   <img src={logo} alt="animal"/>
-  <span>Sasebo Heavy Industries</span>
+  <span>Shop house Animal</span>
         </div>
     );
 }
