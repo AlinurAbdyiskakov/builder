@@ -3,13 +3,15 @@
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-color: chartreuse;
-   
+    background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .color{
-    /* flex: 370px; */
+
     height: 400px;
     width: 400px;
     border-radius: 50%;
-   
+ background-color: rgb(70, 70, 173);
 }
