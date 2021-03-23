@@ -1,25 +1,24 @@
 import AnimalAll from"../AnimalAll/AnimalAll";
 import classes from "./AnimalPreview.module.css";
+import ingredientsBackground from "../../../imges/maiak.svg";
 
-const AnimalPreview = () => {
+const AnimalPreview = ({ animalAlls }) => {
+  const result = [];
+  for (const animalAll in animalAlls) {
+    for (let i = 0; i < animalAlls[animalAll]; i++) {
+      result.push(<AnimalAll type={animalAll} />)
+    }
+  }
+
   return (
-    <div className={classes.AnimalPreview}>
-     <div  className={ classes.color}>
-     
-         <AnimalAll type="boat"/>
-         <AnimalAll type="boat"/>
-         <AnimalAll type="boat"/>
-         <AnimalAll type="boat"/>
-         <AnimalAll type="boat"/>
-         <AnimalAll type="boat"/>
-         <AnimalAll type="boat"/>
-         <AnimalAll type="ship"/>
-         <AnimalAll type="ship"/><AnimalAll type="ship"/><AnimalAll type="ship"/><AnimalAll type="ship"/><AnimalAll type="ship"/>
-     
-     </div>
+    <div className={classes.PizzaPreview}>
+      <div
+        className={classes.ingredients}
+        style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+        {result}
+      </div>
     </div>
   );
-  
 }
- 
+
 export default AnimalPreview;
