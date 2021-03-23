@@ -2,5 +2,5 @@
     display: flex;
     align-items: center;
 }
-.Logo img{height: 50px;
+.Logo img{height: 90px;width: 150px;
 margin-right: .5rem;}
