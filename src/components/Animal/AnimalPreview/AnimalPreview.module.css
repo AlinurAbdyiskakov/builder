@@ -31,7 +31,9 @@
     height: 380px;
     border-radius: 100%;
     position: relative;
-    display: flex;
+  
+  }
+  .ingredients img {  display: flex;
     justify-content: space-around;
     flex-direction: row;
   }
