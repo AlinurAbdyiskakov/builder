@@ -1,8 +1,8 @@
   
 import classes from "./AnimalAll.module.css";
 
-// import salamiBackground from "../../../imges/logo-Animal-shop.jpg";
-// import tomatoBackground from "../../../images/tomato.svg";
+import catBackground from "../../../imges/cat.jpg";
+import dogBackground from "../../../imges/dog.svg";
 // import blackOliveBackground from "../../../images/blackOlive.svg";
 // import greenOliveBackground from "../../../images/greenOlive.svg";
 // import redPepperBackground from "../../../images/redPepper.svg";
@@ -10,8 +10,8 @@ import classes from "./AnimalAll.module.css";
 
 const AnimalAll = ({ type }) => {
   const types = {
-    // salami: { backgroundImage: `url(${salamiBackground})`, width: "35px", height: "35px" },
-    // tomato: { backgroundImage: `url(${tomatoBackground})`, width: "35px", height: "35px" },
+  cat: { backgroundImage: `url(${catBackground})`, width: "35px", height: "35px" },
+   dog: { backgroundImage: `url(${dogBackground})`, width: "35px", height: "35px" },
     // blackOlive: { backgroundImage: `url(${blackOliveBackground})`, width: "10px", height: "10px" },
     // greenOlive: { backgroundImage: `url(${greenOliveBackground})`, width: "10px", height: "10px" },
     // redPepper: { backgroundImage: `url(${redPepperBackground})`, width: "20px", height: "20px" },
