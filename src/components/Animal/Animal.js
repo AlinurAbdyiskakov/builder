@@ -12,7 +12,7 @@ const Animal = () => {
   };
 
   return (
-    <div className={classes.PizzaBuilder}>
+    <div className={classes.Animal}>
       <AnimalPreview ingredients={ingredients} />
       <AnimalControls />
     </div>
