@@ -4,7 +4,7 @@ import AnimalPreview from "./AnimalPreview/AnimalPreview";
 const Animal = () => {
   const ingredients = {
     Dog: 10,
-    Cat: 100,
+    Cat: 1,
     pig: 20,
     toad: 20,
   mouse:20,
