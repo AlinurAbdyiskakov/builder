@@ -18,39 +18,39 @@ const AnimalAll = ({ type }) => {
    pig: { backgroundImage: `url(${pigBackground})`, width: "35px", height: "35px" },
     cow: { backgroundImage: `url(${cowBackground})`, width: "35px", height: "35px" },
     mouse: { backgroundImage: `url(${mouseBackground})`, width: "20px", height: "20px" },
-    toad: { backgroundImage: `url(${toad})`, width: "40px", height: "40px" },
+    toad: { backgroundImage: `url(${toad})`, width: "10px", height: "10px" },
    
   };
-  // function getPosition(ingredientWidth) {
-  //   const AnimalDiameter = 480;
-  //   const AnimalRadius = AnimalDiameter / 2;
-  //   const ingredientRadius = parseInt(ingredientWidth) / 2;
+  function getPosition(ingredientWidth) {
+    const AnimalDiameter = 580;
+    const AnimalRadius = AnimalDiameter / 2;
+    const ingredientRadius = parseInt(ingredientWidth) / 2;
 
-  //   const ingredientTop = Math.round(Math.random() * AnimalDiameter);
-  //   const ingredientLeft = Math.round(Math.random() * AnimalDiameter);
+    const ingredientTop = Math.round(Math.random() * AnimalDiameter);
+    const ingredientLeft = Math.round(Math.random() * AnimalDiameter);
 
-  //   const distance = Math.sqrt(
-  //     Math.pow(ingredientTop - AnimalRadius, 2) + Math.pow(ingredientLeft - AnimalRadius, 2)
-  //   ) + ingredientRadius;
+    const distance = Math.sqrt(
+      Math.pow(ingredientTop - AnimalRadius, 2) + Math.pow(ingredientLeft - AnimalRadius, 2)
+    ) + ingredientRadius;
 
-  //   return distance < AnimalRadius
-  //     ? {
-  //       top: ingredientTop - ingredientRadius,
-  //       left: ingredientLeft - ingredientRadius
+    return distance < AnimalRadius
+      ? {
+        top: ingredientTop - ingredientRadius,
+        left: ingredientLeft - ingredientRadius
         
-  //     }
-  //     : getPosition(ingredientWidth);
-  // }
+      }
+      : getPosition(ingredientWidth);
+  }
 
-  // const position = getPosition(types[type].width);
-  // types[type].top = position.top + "px";
-  // types[type].left = position.left + "px";
+  const position = getPosition(types[type].width);
+  types[type].top = position.top + "px";
+  types[type].left = position.left + "px";
  
 
 
   return (
     <div className={classes.AnimalAll} style={types[type]}>
-      {/* <Ship/> */}
+      <div className={classes.Ship}></div>
       </div>
   );
 }
