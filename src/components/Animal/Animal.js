@@ -6,9 +6,9 @@ const Animal = () => {
     Dog: 10,
     Cat: 100,
     pig: 20,
-  //   horse: 20,
-  //  ship: 20,
-  //  cou: 15,
+    toad: 20,
+  mouse:20,
+   cow: 15,
   };
 
   return (
