@@ -1,13 +1,18 @@
 
 .color{
 
-    height: 400px;
-    width: 400px;
+    height: 550px;
+    width: 500px;
     border-radius: 15%;
  background-color: rgb(221, 70, 176);
  display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: row;
+}
+.color img {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 /* .AnimalPreview {
     flex: 0 0 400px;
@@ -26,4 +31,7 @@
     height: 380px;
     border-radius: 100%;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
