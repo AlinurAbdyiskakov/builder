@@ -1,8 +1,29 @@
 
 .color{
 
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     border-radius: 15%;
  background-color: rgb(221, 70, 176);
+ display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+/* .AnimalPreview {
+    flex: 0 0 400px;
+    height: 400px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+    background-color: rgb(221, 70, 176);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .ingredients {
+    width: 380px;
+    height: 380px;
+    border-radius: 100%;
+    position: relative;
+  }

@@ -5,3 +5,8 @@
     flex-direction: row;
     
   }
+  .AnimalAll img{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+  }

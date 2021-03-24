@@ -5,7 +5,7 @@ const Animal = () => {
   const ingredients = {
     Dog: 10,
     cat: 20,
-    pige: 20,
+    pig: 20,
     horse: 20,
    ship: 20,
    cou: 15,
