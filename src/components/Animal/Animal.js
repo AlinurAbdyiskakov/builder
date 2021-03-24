@@ -3,7 +3,7 @@ import AnimalControls from "./AnimalControls/AnimalControls";
 import AnimalPreview from "./AnimalPreview/AnimalPreview";
 const Animal = () => {
   const ingredients = {
-    Dog: 20,
+    Dog: 10,
     cat: 20,
     pige: 20,
     horse: 20,
