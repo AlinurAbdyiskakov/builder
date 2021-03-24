@@ -7,7 +7,7 @@ const Animal = () => {
     Dog: 10,
     Cat: 1,
     pig: 20,
-    toad: 20,
+    toad: 90,
   mouse:20,
    cow: 15,
   //  Ship:50,

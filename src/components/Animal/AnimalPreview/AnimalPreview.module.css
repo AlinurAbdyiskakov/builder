@@ -1,39 +1,24 @@
+.AnimalPreview {
+  flex: 0 0 400px;
+  height: 400px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+  background-color: wheat;
 
-.color{
-
-    height: 550px;
-    width: 500px;
-    border-radius: 15%;
- background-color: rgb(221, 70, 176);
- display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.color img {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-/* .AnimalPreview {
-    flex: 0 0 400px;
-    height: 400px;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 100%;
-    background-color: rgb(221, 70, 176);
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  .ingredients {
-    width: 380px;
-    height: 380px;
-    border-radius: 100%;
-    position: relative;
-  
-  }
-  .ingredients img {  display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-  }
+.color{
+  border: 10px dotted black;
+  border-radius: 30px 30px 0 0px ;
+
+  padding: 20px;
+  width: 470px;
+  height: 470px;
+  background-color: rgb(175, 49, 119);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
