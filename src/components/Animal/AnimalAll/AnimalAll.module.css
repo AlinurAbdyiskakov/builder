@@ -1,13 +1,14 @@
 .AnimalAll {
    /* position: absolute; */
+ 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     
   }
   .AnimalAll img{
 display: flex;
-justify-content: space-between;
+justify-content: center;
 flex-direction: row;
 width: 40px;
 height: 50px;
