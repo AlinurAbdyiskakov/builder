@@ -3,10 +3,10 @@
     width: 450px;
     height: 500px;
     border-radius: 25px;
-  
     color: black;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 .Dog{
     display: flex;

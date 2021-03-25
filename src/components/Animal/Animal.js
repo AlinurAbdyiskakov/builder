@@ -1,9 +1,10 @@
+import { useState } from "react";
 import classes from "./Animal.module.css";
 import AnimalControls from "./AnimalControls/AnimalControls";
 import AnimalPreview from "./AnimalPreview/AnimalPreview";
 
 const Animal = () => {
-  const ingredients = {
+  const [ingredients,setIngredients] = useState({
     Dog: 100,
     // Cat: 100,
     pig: 20,
@@ -12,12 +13,12 @@ const Animal = () => {
     mouse: 15,
     bird:50,
   
-  };
+  });
 
   return (
     <div className={classes.Animal}>
       <AnimalPreview ingredients={ingredients} />
-      <AnimalControls />
+      <AnimalControls ingredients={ingredients} />
     </div>
   );
 }
