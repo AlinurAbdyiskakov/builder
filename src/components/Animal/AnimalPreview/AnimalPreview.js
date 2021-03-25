@@ -12,9 +12,9 @@ const AnimalPreview = ({ ingredients }) => {
   }
 
   return (
-    <div className={classes.FruitPreview}>
+    <div className={classes.AnimalPreview}>
       <div
-        className={classes.ingredients}>
+        className={classes.color}>
         {result}
       </div>
     </div>
