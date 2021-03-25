@@ -1,4 +1,7 @@
 body{
     font-family: 'Redressed', cursive;
     margin: 0;
+   background-image: url(./imges/body-Logo.jpg);
+   width: 100%;height: 100%;
+   background-size: 100%;
 }

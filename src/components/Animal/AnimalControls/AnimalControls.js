@@ -22,13 +22,13 @@ const AnimalControls = () => {
  <button>-</button>
  </div>
  <div className={ classes.Dog}>
-   <h2>cow </h2>
+   <h2>Bird</h2>
  <button>+</button>
  <h1>0</h1>
  <button>-</button>
  </div>
  <div className={ classes.Dog}>
-   <h2>toad </h2>
+   <h2>turtle</h2>
  <button>+</button>
  <h1>0</h1>
  <button>-</button>
