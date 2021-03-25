@@ -4,7 +4,7 @@ const AnimalControls = () => {
   return (
     <div className={classes.AnimalControls}
     style={{ backgroundImage: `url(${ingredientsBackground})` }}>
- {/* <div className={ classes.Dog}>
+ <div className={ classes.Dog}>
    <h2>Dog</h2>
  <button>+</button>
  <h1>0</h1>
@@ -33,7 +33,7 @@ const AnimalControls = () => {
  <button>+</button>
  <h1>0</h1>
  <button>-</button>
- </div> */}
+ </div>
    </div>
   );
 }
