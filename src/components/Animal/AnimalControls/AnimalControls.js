@@ -1,8 +1,9 @@
 import classes from "./AnimalControls.module.css";
-
+import ingredientsBackground from "../../../imges/body-Logo.jpg";
 const AnimalControls = () => {
   return (
-    <div className={classes.AnimalControls}>
+    <div className={classes.AnimalControls}
+    style={{ backgroundImage: `url(${ingredientsBackground})` }}>
  <div className={ classes.Dog}>
    <h2>Dog</h2>
  <button>+</button>
