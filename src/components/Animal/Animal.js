@@ -4,17 +4,27 @@ import AnimalControls from "./AnimalControls/AnimalControls";
 import AnimalPreview from "./AnimalPreview/AnimalPreview";
 
 const Animal = () => {
-  const [ingredients,setIngredients] = useState({
-    Dog: 100,
+  const [Ingredients,setIngredients] = useState({
+    Dog: 1,
     // Cat: 100,
-    pig: 20,
-    toad: 10,
-    turtle:20,
-    mouse: 15,
-    bird:50,
+    pig: 1,
+    toad: 1,
+    turtle:1,
+    mouse: 1,
+    bird:1,
   
   });
 
+  function addIngredients(type) {
+    const newIngredients=Ingredients;
+    newIngredients[type]--;
+    setIngredients(newIngredients);
+  }
+  function removeIngredient(type) {
+    const newIngredients = { ...ingredients };
+    newIngredients[type]--;
+    setIngredients(newIngredients);
+  }
   return (
     <div className={classes.Animal}>
       <AnimalPreview ingredients={ingredients} />
