@@ -1,20 +1,13 @@
 .AnimalPreview {
-
-  margin-bottom: 1rem;
-  border-radius: 100%;
-
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .color{
-
   border: 10px dotted black;
   border-radius: 30px  ;
-
-  padding: 20px;
-  width: 470px;
+  padding: 10px;
+  width: 410px;
   height: 470px;
   background-color: rgb(15, 29, 90);
   display: flex;
