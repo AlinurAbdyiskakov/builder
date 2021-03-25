@@ -1,4 +1,5 @@
 import AnimalAll from "../AnimalAll/AnimalAll";
+
 import classes from "./AnimalPreview.module.css";
 
 
@@ -11,7 +12,7 @@ const AnimalPreview = ({ ingredients }) => {
   }
 
   return (
-    <div className={classes.AnimalPreview}>
+    <div className={classes.FruitPreview}>
       <div
         className={classes.ingredients}>
         {result}

@@ -1,5 +1,6 @@
 import AnimalControl from "./AnimalControl/AnimalControl";
 import classes from "./AnimalControls.module.css";
+
 const AnimalControls = ({ ingredients, addIngredient, removeIngredient }) => {
   const results = [];
   for (const ingredient in ingredients) {

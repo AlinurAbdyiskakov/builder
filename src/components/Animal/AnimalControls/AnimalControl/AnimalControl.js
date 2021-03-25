@@ -1,5 +1,5 @@
 import AnimalAll from "../../AnimalAll/AnimalAll";
-import classes from "./PizzaControl.module.css";
+import classes from "./AnimalControl.module.css";
 
 const AnimalControl = ({ type, add, remove }) => {
   return (

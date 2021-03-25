@@ -11,7 +11,7 @@ import toad from "../../../imges/toad.svg";
 import bird from "../../../imges/bird.svg";
 import mouse from"../../../imges/mouse.svg"
 
-const AnimalAll = ({ type }) => {
+const AnimalAll = ({ type ,fixed }) => {
   const types = {
   
    Dog: { backgroundImage: `url(${dogBackground})`, width: "50px", height: "50px" },
@@ -23,25 +23,25 @@ const AnimalAll = ({ type }) => {
     bird:{ backgroundImage: `url(${bird})`, width: "50px", height: "50px"  },
     mouse:{ backgroundImage: `url(${mouse})`, width: "50px", height: "50px"  },
   };
-  function getPosition(ingredientWidth) {
-    const pizzaDiameter = 380;
-    const pizzaRadius = pizzaDiameter / 2;
-    const ingredientRadius = parseInt(ingredientWidth) / 2;
+  // function getPosition(ingredientWidth) {
+  //   const AnimalDiameter = 580;
+  //   const AnimalRadius = AnimalDiameter / 2;
+  //   const ingredientRadius = parseInt(ingredientWidth) / 2;
 
-    const ingredientTop = Math.round(Math.random() * pizzaDiameter);
-    const ingredientLeft = Math.round(Math.random() * pizzaDiameter);
+  //   const ingredientTop = Math.round(Math.random() * AnimalDiameter);
+  //   const ingredientLeft = Math.round(Math.random() * AnimalDiameter);
 
-    const distance = Math.sqrt(
-      Math.pow(ingredientTop - pizzaRadius, 2) + Math.pow(ingredientLeft - pizzaRadius, 2)
-    ) + ingredientRadius;
+  //   const distance = Math.sqrt(
+  //     Math.pow(ingredientTop - AnimalRadius, 2) + Math.pow(ingredientLeft - AnimalRadius, 2)
+  //   ) + ingredientRadius;
 
-    return distance < pizzaRadius
-      ? {
-        top: ingredientTop - ingredientRadius,
-        left: ingredientLeft - ingredientRadius
-      }
-      : getPosition(ingredientWidth);
-  }
+  //   return distance < AnimalRadius
+  //     ? {
+  //       top: ingredientTop - ingredientRadius,
+  //       left: ingredientLeft - ingredientRadius
+  //     }
+  //     : getPosition(ingredientWidth);
+  // }
 
   // // Get random position for this ingredient.
   // if (!fixed) {
@@ -56,5 +56,4 @@ const AnimalAll = ({ type }) => {
     <div className={classes.AnimalAll} style={types[type]}></div>
   );
 }
-
 export default AnimalAll;
