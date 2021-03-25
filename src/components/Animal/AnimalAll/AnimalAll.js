@@ -53,9 +53,8 @@ const AnimalAll = ({ type }) => {
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
-    <div className={classes.AnimalAll} style={types[type]}>
-      <div className={classes.Ship}></div>
-      </div>
+    <div className={classes.AnimalAll} style={types[type]}></div>
   );
 }
+
 export default AnimalAll;

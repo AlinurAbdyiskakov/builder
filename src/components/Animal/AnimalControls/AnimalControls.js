@@ -3,7 +3,7 @@ import classes from "./AnimalControls.module.css";
 const AnimalControls = ({ ingredients, addIngredient, removeIngredient }) => {
   const results = [];
   for (const ingredient in ingredients) {
-    results.push(<PizzaControl
+    results.push(<AnimalControls
         key={ingredient}
         add={addIngredient}
         remove={removeIngredient}

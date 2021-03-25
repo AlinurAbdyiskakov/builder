@@ -1,37 +1,40 @@
-import { useState } from "react";
-import classes from "./Animal.module.css";
-import AnimalControls from "./AnimalControls/AnimalControls";
 import AnimalPreview from "./AnimalPreview/AnimalPreview";
+import AnimalControls from "./AnimalControls/AnimalControls";
+
+import classes from "./Animal.module.css";
+import { useState } from "react";
 
 const Animal = () => {
-  const [Ingredients,setIngredients] = useState({
-    Dog: 1,
-    // Cat: 100,
-    pig: 1,
-    toad: 1,
-    turtle:1,
-    mouse: 1,
-    bird:1,
-  
+  const [ingredients, setIngredients] = useState({
+    tomato: 1,
+    salami: 1,
+    greenOlive: 1,
+    blackOlive: 1,
+    redPepper: 1,
+    yellowPepper: 1,
   });
 
-  function addIngredients(type) {
-    const newIngredients=Ingredients;
-    newIngredients[type]--;
+  function addIngredient(type) {
+    const newIngredients = { ...ingredients };
+    newIngredients[type]++;
     setIngredients(newIngredients);
   }
+
   function removeIngredient(type) {
     const newIngredients = { ...ingredients };
     newIngredients[type]--;
     setIngredients(newIngredients);
   }
+
   return (
     <div className={classes.Animal}>
       <AnimalPreview ingredients={ingredients} />
-      <AnimalControls ingredients={ingredients} />
+      <AnimalControls
+        ingredients={ingredients}
+        addIngredient={addIngredient}
+        removeIngredient={removeIngredient}
+        />
     </div>
   );
 }
-
- 
 export default Animal;
