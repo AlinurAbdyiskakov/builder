@@ -9,8 +9,8 @@ const Animal = () => {
     pig: 20,
     toad: 10,
     turtle:20,
-   mouse: 15,
-   bird:50,
+    mouse: 15,
+    bird:50,
   
   };
 
