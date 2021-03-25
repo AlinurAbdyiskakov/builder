@@ -1,9 +1,9 @@
 
 import Layout from "./components/Layout/Layout" ;
-import "./App.css" ;
 import Animal from "./components/Animal/Animal" ;
 
-function App() {
+import "./App.css" ;
+const App =() =>{
   return (
     <div className="App">
       <Layout>
