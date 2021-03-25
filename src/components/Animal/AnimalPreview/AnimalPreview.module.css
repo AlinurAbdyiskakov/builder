@@ -1,17 +1,15 @@
 .AnimalPreview {
-  flex: 0 0 400px;
-  height: 100px;
-  /* margin-right: 1rem;
-  margin-bottom: 1rem; */
+
+  margin-bottom: 1rem;
   border-radius: 100%;
-  background-color: wheat;
+
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .color{
-  margin-top: 1rem;
+
   border: 10px dotted black;
   border-radius: 30px  ;
 

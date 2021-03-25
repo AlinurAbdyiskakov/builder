@@ -1,5 +1,6 @@
 import AnimalControl from "./AnimalControl/AnimalControl";
 import classes from "./AnimalControls.module.css";
+import ingredientsBackground from "../../../imges/body-Logo.jpg";
 
 const AnimalControls = ({ ingredients, addIngredient, removeIngredient }) => {
   const results = [];
@@ -12,7 +13,8 @@ const AnimalControls = ({ ingredients, addIngredient, removeIngredient }) => {
   }
 
   return (
-    <div className={classes.AnimalControls}>
+    <div className={classes.AnimalControls}
+    style={{ backgroundImage: `url(${ingredientsBackground})` }}>
       <strong>Ingredients</strong>
       {results}
     </div>
