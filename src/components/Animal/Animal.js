@@ -4,13 +4,13 @@ import AnimalPreview from "./AnimalPreview/AnimalPreview";
 
 const Animal = () => {
   const ingredients = {
-    // Dog: 10,
-    // Cat: 1,
-    // pig: 20,
-    // toad: 90,
+    Dog: 100,
+    Cat: 100,
+    pig: 20,
+    toad: 10,
   mouse:20,
-  //  cow: 15,
-  //  Ship:50,
+   cow: 15,
+   Ship:50,
   
   };
 

@@ -6,7 +6,7 @@ import dogBackground from "../../../imges/dog.svg";
 import catBackground from "../../../imges/cat.svg";
 import pigBackground from "../../../imges/pig.svg";
 import cowBackground from "../../../imges/cow.svg";
-import mouseBackground from "../../../imges/turtle.svg";
+import mouse from "../../../imges/turtle.svg";
 import toad from "../../../imges/toad.svg";
 // import Ship from "./AnimalAll/Ship";
 
@@ -17,7 +17,7 @@ const AnimalAll = ({ type }) => {
    Cat: { backgroundImage: `url(${catBackground})`, width: "50px", height: "50px" },
    pig: { backgroundImage: `url(${pigBackground})`, width: "50px", height: "50px" },
     cow: { backgroundImage: `url(${cowBackground})`, width: "50px", height: "50px" },
-    mouse: { backgroundImage: `url(${mouseBackground})`, width: "50px", height: "50px" },
+    mouse: { backgroundImage: `url(${mouse})`, width: "50px", height: "50px" },
     toad: { backgroundImage: `url(${toad})`, width: "50px", height: "50px"  },
    
   };
