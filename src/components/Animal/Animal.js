@@ -10,7 +10,7 @@ const Animal = () => {
     pig: 1,
     mouse: 1,
     bird:1,
-    pig: 1,
+    cow: 1,
     toad: 1,
     turtle:1,
   });
