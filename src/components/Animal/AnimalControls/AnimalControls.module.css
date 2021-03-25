@@ -6,3 +6,15 @@
     background-color: rgb(80, 80, 199);
     color: white;
 }
+.Dog{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.Dog button{
+  
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}

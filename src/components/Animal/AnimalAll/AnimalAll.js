@@ -13,11 +13,11 @@ import toad from "../../../imges/toad.svg";
 const AnimalAll = ({ type }) => {
   const types = {
   
-   Dog: { backgroundImage: `url(${dogBackground})`, width: "35px", height: "35px" },
-   Cat: { backgroundImage: `url(${catBackground})`, width: "35px", height: "35px" },
-   pig: { backgroundImage: `url(${pigBackground})`, width: "35px", height: "35px" },
-    cow: { backgroundImage: `url(${cowBackground})`, width: "35px", height: "35px" },
-    mouse: { backgroundImage: `url(${mouseBackground})`, width: "20px", height: "20px" },
+   Dog: { backgroundImage: `url(${dogBackground})`, width: "50px", height: "50px" },
+   Cat: { backgroundImage: `url(${catBackground})`, width: "50px", height: "50px" },
+   pig: { backgroundImage: `url(${pigBackground})`, width: "50px", height: "50px" },
+    cow: { backgroundImage: `url(${cowBackground})`, width: "50px", height: "50px" },
+    mouse: { backgroundImage: `url(${mouseBackground})`, width: "50px", height: "50px" },
     toad: { backgroundImage: `url(${toad})`, width: "50px", height: "50px"  },
    
   };
