@@ -3,23 +3,25 @@ import classes from "./AnimalAll.module.css";
 
 
 import dogBackground from "../../../imges/dog.svg";
-import catBackground from "../../../imges/cat.svg";
+import cat from "../../../imges/cat.svg";
 import pigBackground from "../../../imges/pig.svg";
 import cowBackground from "../../../imges/cow.svg";
-import mouse from "../../../imges/turtle.svg";
+import turtle from "../../../imges/turtle.svg";
 import toad from "../../../imges/toad.svg";
-// import Ship from "./AnimalAll/Ship";
+import bird from "../../../imges/bird.svg";
+import mouse from"../../../imges/mouse.svg"
 
 const AnimalAll = ({ type }) => {
   const types = {
   
    Dog: { backgroundImage: `url(${dogBackground})`, width: "50px", height: "50px" },
-   Cat: { backgroundImage: `url(${catBackground})`, width: "50px", height: "50px" },
+   Cat: { backgroundImage: `url(${cat})`, width: "80px", height: "80px" },
    pig: { backgroundImage: `url(${pigBackground})`, width: "50px", height: "50px" },
     cow: { backgroundImage: `url(${cowBackground})`, width: "50px", height: "50px" },
-    mouse: { backgroundImage: `url(${mouse})`, width: "50px", height: "50px" },
+    turtle: { backgroundImage: `url(${turtle})`, width: "50px", height: "50px" },
     toad: { backgroundImage: `url(${toad})`, width: "50px", height: "50px"  },
-   
+    bird:{ backgroundImage: `url(${bird})`, width: "50px", height: "50px"  },
+    mouse:{ backgroundImage: `url(${mouse})`, width: "50px", height: "50px"  },
   };
   // function getPosition(ingredientWidth) {
   //   const AnimalDiameter = 580;

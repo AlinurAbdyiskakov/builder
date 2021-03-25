@@ -5,12 +5,12 @@ import AnimalPreview from "./AnimalPreview/AnimalPreview";
 const Animal = () => {
   const ingredients = {
     Dog: 100,
-    Cat: 100,
+    // Cat: 100,
     pig: 20,
     toad: 10,
-  mouse:20,
-   cow: 15,
-   Ship:50,
+    turtle:20,
+   mouse: 15,
+   bird:50,
   
   };
 
