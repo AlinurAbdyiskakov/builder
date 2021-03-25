@@ -1,0 +1,24 @@
+.AnimalControl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0;
+}
+.AnimalControl button{
+    border: 0;
+    margin: 0 .5rem;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(37, 5, 73);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.AnimalControl button:hover{
+    background-color: violet;
+}
+.AnimalControl button:focus{
+    outline: none;
+}
