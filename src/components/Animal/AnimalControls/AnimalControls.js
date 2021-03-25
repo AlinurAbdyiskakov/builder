@@ -18,7 +18,7 @@ const AnimalControls = () => {
  <div className={ classes.Dog}>
    <h2>pig </h2>
  <button>+</button>
- <h1>toad</h1>
+ <h1>0</h1>
  <button>-</button>
  </div>
  <div className={ classes.Dog}>
@@ -28,7 +28,7 @@ const AnimalControls = () => {
  <button>-</button>
  </div>
  <div className={ classes.Dog}>
-   <h2>horse </h2>
+   <h2>toad </h2>
  <button>+</button>
  <h1>0</h1>
  <button>-</button>

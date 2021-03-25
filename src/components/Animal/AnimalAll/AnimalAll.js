@@ -6,7 +6,7 @@ import dogBackground from "../../../imges/dog.svg";
 import catBackground from "../../../imges/cat.svg";
 import pigBackground from "../../../imges/pig.svg";
 import cowBackground from "../../../imges/cow.svg";
-import mouseBackground from "../../../imges/mouse.svg";
+import mouseBackground from "../../../imges/turtle.svg";
 import toad from "../../../imges/toad.svg";
 // import Ship from "./AnimalAll/Ship";
 
