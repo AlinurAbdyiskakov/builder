@@ -1,7 +1,12 @@
 .Animal{
+   
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
 display: flex;
 justify-content: space-evenly;
 flex-direction: row;
-margin: 1rem;
+/* margin: 1rem; */
 flex-wrap: wrap;
+background-color: green;
 }

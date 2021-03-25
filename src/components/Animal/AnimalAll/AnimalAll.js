@@ -18,7 +18,7 @@ const AnimalAll = ({ type }) => {
    pig: { backgroundImage: `url(${pigBackground})`, width: "35px", height: "35px" },
     cow: { backgroundImage: `url(${cowBackground})`, width: "35px", height: "35px" },
     mouse: { backgroundImage: `url(${mouseBackground})`, width: "20px", height: "20px" },
-    toad: { backgroundImage: `url(${toad})`, width: "50px", height: "50px" },
+    toad: { backgroundImage: `url(${toad})`, width: "50px", height: "50px"  },
    
   };
   // function getPosition(ingredientWidth) {
