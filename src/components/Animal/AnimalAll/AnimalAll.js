@@ -43,14 +43,14 @@ const AnimalAll = ({ type }) => {
       : getPosition(ingredientWidth);
   }
 
-  // Get random position for this ingredient.
-  if (!fixed) {
-    const position = getPosition(types[type].width);
-    types[type].top = position.top + "px";
-    types[type].left = position.left + "px";
-  }
-  // Get random rotation for this ingredient.
-  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+  // // Get random position for this ingredient.
+  // if (!fixed) {
+  //   const position = getPosition(types[type].width);
+  //   types[type].top = position.top + "px";
+  //   types[type].left = position.left + "px";
+  // }
+  // // Get random rotation for this ingredient.
+  // types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
     <div className={classes.AnimalAll} style={types[type]}></div>

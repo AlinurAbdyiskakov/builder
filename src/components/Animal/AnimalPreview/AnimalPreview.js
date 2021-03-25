@@ -6,14 +6,14 @@ const AnimalPreview = ({ ingredients }) => {
   const result = [];
   for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<AnimalAll type={ingredient} />)
+      result.push(<AnimalAll key={ingredient + i} type={ingredient} />)
     }
   }
 
   return (
-    <div className={classes.AimalPreview}>
-      <div className={classes.color}>
-       
+    <div className={classes.AnimalPreview}>
+      <div
+        className={classes.ingredients}>
         {result}
       </div>
     </div>
