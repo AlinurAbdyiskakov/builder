@@ -23,35 +23,7 @@ const AnimalAll = ({ type ,fixed }) => {
     bird:{ backgroundImage: `url(${bird})`, width: "50px", height: "50px"  },
     mouse:{ backgroundImage: `url(${mouse})`, width: "50px", height: "50px"  },
   };
-  // function getPosition(ingredientWidth) {
-  //   const AnimalDiameter = 580;
-  //   const AnimalRadius = AnimalDiameter / 2;
-  //   const ingredientRadius = parseInt(ingredientWidth) / 2;
-
-  //   const ingredientTop = Math.round(Math.random() * AnimalDiameter);
-  //   const ingredientLeft = Math.round(Math.random() * AnimalDiameter);
-
-  //   const distance = Math.sqrt(
-  //     Math.pow(ingredientTop - AnimalRadius, 2) + Math.pow(ingredientLeft - AnimalRadius, 2)
-  //   ) + ingredientRadius;
-
-  //   return distance < AnimalRadius
-  //     ? {
-  //       top: ingredientTop - ingredientRadius,
-  //       left: ingredientLeft - ingredientRadius
-  //     }
-  //     : getPosition(ingredientWidth);
-  // }
-
-  // // Get random position for this ingredient.
-  // if (!fixed) {
-  //   const position = getPosition(types[type].width);
-  //   types[type].top = position.top + "px";
-  //   types[type].left = position.left + "px";
-  // }
-  // // Get random rotation for this ingredient.
-  // types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
-
+ 
   return (
     <div className={classes.AnimalAll} style={types[type]}></div>
   );
