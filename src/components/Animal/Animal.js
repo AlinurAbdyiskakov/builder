@@ -6,13 +6,13 @@ import { useState } from "react";
 
 const Animal = () => {
   const [ingredients, setIngredients] = useState({
-    Dog: 1,
-    pig: 1,
-    mouse: 1,
-    bird:1,
-    cow: 1,
-    toad: 1,
-    turtle:1,
+    Dog: 0,
+    pig: 0,
+    mouse: 0,
+    bird:0,
+  
+    toad: 0,
+    turtle:0,
   });
 
   function addIngredient(type) {
