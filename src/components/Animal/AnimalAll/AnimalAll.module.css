@@ -4,9 +4,3 @@
     flex-direction: row;
   }
 
- .Ship{
-   display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
-    width: 20px;
-  }

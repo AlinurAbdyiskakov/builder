@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
 
-    background-color: rgb(142, 199, 9);
+    background-color: #55A38D;
   
     font-size: 20px;
     color: white;
@@ -11,5 +11,5 @@
     position: sticky;
     top:0;
     left:0;
-    box-shadow: 0 0  50px rgb(12, 177, 12);
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.342);
 }

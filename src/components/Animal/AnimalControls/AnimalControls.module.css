@@ -1,11 +1,11 @@
 .AnimalControls{
     padding: 20px;
-    width: 450px;
-    height: 500px;
+    width: 430px;
+   min-height: 430px;
     border-radius: 25px;
     color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    
-
+    background-color: #dac384;
+  
 }

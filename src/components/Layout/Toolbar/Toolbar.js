@@ -11,6 +11,7 @@ const Toolbar = ({
     } >
     <Logo / >
     <Nav / >
+    
     <DrawerOpen click = {
       openDrawer
     }

@@ -11,8 +11,9 @@ const Animal = () => {
     mouse: 0,
     bird:0,
   Cat:0,
-    toad: 0,
+    reccoon: 0,
     turtle:0,
+    parrot:0,
   });
 
   function addIngredient(type) {

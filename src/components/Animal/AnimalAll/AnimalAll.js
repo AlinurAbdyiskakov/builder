@@ -7,9 +7,10 @@ import cat from "../../../imges/cat.svg";
 import pigBackground from "../../../imges/pig.svg";
 import cowBackground from "../../../imges/cow.svg";
 import turtle from "../../../imges/turtle.svg";
-import toad from "../../../imges/toad.svg";
+import reccoon from "../../../imges/raccoon.svg";
 import bird from "../../../imges/bird.svg";
-import mouse from"../../../imges/mouse.svg"
+import mouse from"../../../imges/mouse.svg";
+import parrot from "../../../imges/parrot.svg"
 
 const AnimalAll = ({ type ,fixed }) => {
   const types = {
@@ -19,9 +20,10 @@ const AnimalAll = ({ type ,fixed }) => {
    pig: { backgroundImage: `url(${pigBackground})`, width: "50px", height: "50px" },
     cow: { backgroundImage: `url(${cowBackground})`, width: "50px", height: "50px" },
     turtle: { backgroundImage: `url(${turtle})`, width: "50px", height: "50px" },
-    toad: { backgroundImage: `url(${toad})`, width: "50px", height: "50px"  },
+    reccoon: { backgroundImage: `url(${reccoon})`, width: "50px", height: "50px"  },
     bird:{ backgroundImage: `url(${bird})`, width: "50px", height: "50px"  },
     mouse:{ backgroundImage: `url(${mouse})`, width: "50px", height: "50px"  },
+    parrot:{ backgroundImage: `url(${parrot})`, width: "50px", height: "50px"  },
   };
  
   return (
