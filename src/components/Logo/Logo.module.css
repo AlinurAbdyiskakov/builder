@@ -3,6 +3,7 @@
     align-items: center;
 }
 .Logo img{
-    height: 70px;
+    border-radius: 25px;
+    height: 60px;
     margin-right: .5rem;
 }
