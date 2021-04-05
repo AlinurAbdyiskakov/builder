@@ -10,12 +10,15 @@ li{
 a{
    text-decoration: none;
    font-family: 'Quicksand', sans-serif;
+   color: white;
 }
 a:hover{
   text-decoration: underline;
   background-color: blanchedalmond ;
   padding: 15px;
 border-radius: 15px;
+color: rgb(22, 22, 117);
+font-weight: bold;
 }
 
 @media (max-width: 549px) {
