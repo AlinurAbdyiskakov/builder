@@ -1,8 +1,10 @@
 .AnimalPreview {
+  flex: 0 0 400px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
+
 .color{
   border: 0.1px solid black;
   border-radius: 30px  ;
@@ -13,5 +15,16 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  background-color: tomato;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
 }
 

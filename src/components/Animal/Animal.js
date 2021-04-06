@@ -16,6 +16,10 @@ const Animal = () => {
     parrot:0,
   });
 
+
+  const [price, setPrice] = useState(150);
+
+  
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
     newIngredients[type]++;
@@ -31,7 +35,8 @@ const Animal = () => {
 
   return (
     <div className={classes.Animal}>
-      <AnimalPreview ingredients={ingredients} />
+      <AnimalPreview ingredients={ingredients}
+      price={price} />
       <AnimalControls
         ingredients={ingredients}
         addIngredient={addIngredient}
