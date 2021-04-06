@@ -1,6 +1,7 @@
 import AnimalPreview from "./AnimalPreview/AnimalPreview";
 import AnimalControls from "./AnimalControls/AnimalControls";
 import OrderSummary from "./OrderSummary/OrderSummary";
+import Modal from "../UI/Modal/Modal";
 import classes from "./Animal.module.css";
 import { useState } from "react";
 
