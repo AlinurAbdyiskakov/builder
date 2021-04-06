@@ -58,7 +58,8 @@ const Animal = () => {
 
   return (
     <div className={classes.Animal}>
-       <OrderSummary ingredients={ingredients} price={price} />
+        <Modal show={isBuying} cancelCallback={() => setIsBuying(false)}>
+       <OrderSummary ingredients={ingredients} price={price} /></Modal>
       <AnimalPreview ingredients={ingredients}
       price={price} />
       <AnimalControls
