@@ -5,6 +5,16 @@ import classes from "./Animal.module.css";
 import { useState } from "react";
 
 const Animal = () => {
+  const prices = {
+    Dog: 80,
+    pig: 70,
+    mouse:60,
+    bird:40,
+  Cat:20,
+    reccoon: 6760,
+    turtle:540,
+    parrot:450,
+  };
   const [ingredients, setIngredients] = useState({
     Dog: 0,
     pig: 0,
@@ -19,10 +29,11 @@ const Animal = () => {
 
   const [price, setPrice] = useState(150);
 
-  
+
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
     newIngredients[type]++;
+    setPrice(price + prices[type]);
     setIngredients(newIngredients);
   }
 
@@ -30,6 +41,7 @@ const Animal = () => {
     if (ingredients[type]){
     const newIngredients = { ...ingredients };
     newIngredients[type]--;
+    setPrice(price - prices[type]);
     setIngredients(newIngredients);
    } }
 
