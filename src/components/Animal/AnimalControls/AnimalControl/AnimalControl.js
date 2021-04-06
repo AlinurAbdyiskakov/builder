@@ -1,14 +1,15 @@
+import Button from "../../../UI/Button/Button";
 import AnimalAll from "../../AnimalAll/AnimalAll";
 import classes from "./AnimalControl.module.css";
 
 const AnimalControl = ({ type, add, remove }) => {
   return (
     <div className={classes.AnimalControl}>
-      <button className={classes.more} onClick={() => add(type)}>+</button>
+ <Button onClick={() => add(type)}>+</Button>
       <div className={classes.ingredient}>
         <AnimalAll type={type} fixed />
       </div>
-      <button className={classes.less} onClick={() => remove(type)}>-</button>
+      <Button onClick={() => remove(type)}>-</Button>
     </div>
   );
 }

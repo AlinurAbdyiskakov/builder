@@ -1,3 +1,4 @@
+import Button from "../../UI/Button/Button";
 import AnimalControl from "./AnimalControl/AnimalControl";
 import classes from "./AnimalControls.module.css";
 // import ingredientsBackground from "../../../imges/body-Logo.jpg";

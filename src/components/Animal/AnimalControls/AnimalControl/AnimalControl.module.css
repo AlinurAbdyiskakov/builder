@@ -4,7 +4,7 @@
     align-items: center;
     margin: .5rem 0;
 }
-.AnimalControl button{
+/* .AnimalControl button{
     border: 0;
     margin: 0 .5rem;
     border-radius: 100%;
@@ -21,4 +21,4 @@
 }
 .AnimalControl button:focus{
     outline: none;
-}
+} */
