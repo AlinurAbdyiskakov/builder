@@ -23,10 +23,11 @@ const Animal = () => {
   }
 
   function removeIngredient(type) {
+    if (ingredients[type]){
     const newIngredients = { ...ingredients };
     newIngredients[type]--;
     setIngredients(newIngredients);
-  }
+   } }
 
   return (
     <div className={classes.Animal}>
