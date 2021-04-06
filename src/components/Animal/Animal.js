@@ -1,6 +1,6 @@
 import AnimalPreview from "./AnimalPreview/AnimalPreview";
 import AnimalControls from "./AnimalControls/AnimalControls";
-
+import OrderSummary from "./OrderSummary/OrderSummary";
 import classes from "./Animal.module.css";
 import { useState } from "react";
 
@@ -29,6 +29,7 @@ const Animal = () => {
 
   const [price, setPrice] = useState(0);
   const [canBuy, setCanBuy] = useState(true);
+  const [isBuying, setIsBuying] = useState(false);
 
   function checkCanBuy(newIngredients) {
     const totalIngredients = Object.values(newIngredients)
@@ -56,10 +57,13 @@ const Animal = () => {
 
   return (
     <div className={classes.Animal}>
+       <OrderSummary ingredients={ingredients} price={price} />
       <AnimalPreview ingredients={ingredients}
       price={price} />
       <AnimalControls
+      
        canBuy={canBuy}
+       setIsBuying={setIsBuying}
         ingredients={ingredients}
         addIngredient={addIngredient}
         removeIngredient={removeIngredient}

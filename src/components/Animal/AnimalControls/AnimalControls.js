@@ -4,7 +4,14 @@ import classes from "./AnimalControls.module.css";
 // import ingredientsBackground from "../../../imges/body-Logo.jpg";
 
 
-  const AnimalControls = ({ ingredients, addIngredient, removeIngredient, canBuy }) => {
+  // const AnimalControls = ({ ingredients, addIngredient, removeIngredient, canBuy }) => {
+const AnimalControls = ({
+    ingredients,
+    addIngredient,
+    removeIngredient,
+    canBuy,
+    setIsBuying
+  }) => {
   const results = [];
   for (const ingredient in ingredients) {
     results.push(<AnimalControl
@@ -21,6 +28,11 @@ import classes from "./AnimalControls.module.css";
       <strong >Animal house</strong>
       {results}
       <button disabled={!canBuy}>Order</button>
+      <Button
+        onClick={() => setIsBuying(true)}
+        disabled={!canBuy}>
+          Order
+      </Button>
     </div>
   );
 }
