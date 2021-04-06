@@ -27,12 +27,20 @@ const Animal = () => {
   });
 
 
-  const [price, setPrice] = useState(150);
+  const [price, setPrice] = useState(0);
+  const [canBuy, setCanBuy] = useState(true);
+
+  function checkCanBuy(newIngredients) {
+    const totalIngredients = Object.values(newIngredients)
+      .reduce((total, current) => total + current);
+    setCanBuy(totalIngredients > 0);
+  }
 
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
     newIngredients[type]++;
+    checkCanBuy(newIngredients);
     setPrice(price + prices[type]);
     setIngredients(newIngredients);
   }
@@ -41,6 +49,7 @@ const Animal = () => {
     if (ingredients[type]){
     const newIngredients = { ...ingredients };
     newIngredients[type]--;
+    checkCanBuy(newIngredients);
     setPrice(price - prices[type]);
     setIngredients(newIngredients);
    } }
@@ -50,6 +59,7 @@ const Animal = () => {
       <AnimalPreview ingredients={ingredients}
       price={price} />
       <AnimalControls
+       canBuy={canBuy}
         ingredients={ingredients}
         addIngredient={addIngredient}
         removeIngredient={removeIngredient}

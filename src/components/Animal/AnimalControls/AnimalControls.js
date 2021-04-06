@@ -2,14 +2,16 @@ import AnimalControl from "./AnimalControl/AnimalControl";
 import classes from "./AnimalControls.module.css";
 // import ingredientsBackground from "../../../imges/body-Logo.jpg";
 
-const AnimalControls = ({ ingredients, addIngredient, removeIngredient }) => {
+
+  const AnimalControls = ({ ingredients, addIngredient, removeIngredient, canBuy }) => {
   const results = [];
   for (const ingredient in ingredients) {
     results.push(<AnimalControl
         key={ingredient}
         add={addIngredient}
         remove={removeIngredient}
-        type={ingredient} />)
+        type={ingredient} />
+        )
   }
 
   return (
@@ -17,6 +19,7 @@ const AnimalControls = ({ ingredients, addIngredient, removeIngredient }) => {
     {/* style={{ backgroundImage: `url(${ingredientsBackground})` }} */}
       <strong >Animal house</strong>
       {results}
+      <button disabled={!canBuy}>Order</button>
     </div>
   );
 }
