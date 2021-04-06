@@ -1,10 +1,7 @@
 import Button from "../../UI/Button/Button";
 import AnimalControl from "./AnimalControl/AnimalControl";
 import classes from "./AnimalControls.module.css";
-// import ingredientsBackground from "../../../imges/body-Logo.jpg";
 
-
-  // const AnimalControls = ({ ingredients, addIngredient, removeIngredient, canBuy }) => {
 const AnimalControls = ({
     ingredients,
     addIngredient,
@@ -24,10 +21,10 @@ const AnimalControls = ({
 
   return (
     <div className={classes.AnimalControls}>
-    {/* style={{ backgroundImage: `url(${ingredientsBackground})` }} */}
+   
       <strong >Animal house</strong>
       {results}
-      <button disabled={!canBuy}>Order</button>
+    
       <Button
         onClick={() => setIsBuying(true)}
         disabled={!canBuy}>
