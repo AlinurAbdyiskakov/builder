@@ -12,9 +12,9 @@ const Animal = () => {
     mouse:60,
     bird:40,
   Cat:20,
-    reccoon: 6760,
-    turtle:540,
-    parrot:450,
+    reccoon: 67,
+    turtle:54,
+    parrot:45,
   };
   const [ingredients, setIngredients] = useState({
     Dog: 0,
