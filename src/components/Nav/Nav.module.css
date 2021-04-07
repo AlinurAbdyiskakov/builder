@@ -10,7 +10,8 @@ li{
 a{
    text-decoration: none;
    font-family: 'Quicksand', sans-serif;
-   color: white;
+   color: black;
+   font-weight: 900;
 }
 a:hover{
   text-decoration: underline;
