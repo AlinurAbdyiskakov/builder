@@ -14,7 +14,8 @@ const AnimalPreview = ({ ingredients,price }) => {
     <div className={classes.AnimalPreview}>
       <div
         className={classes.color}>
-        {result}
+          <div className={classes.name}> {result}</div>
+       
       </div>
       <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>
