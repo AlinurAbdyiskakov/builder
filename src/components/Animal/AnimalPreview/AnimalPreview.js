@@ -16,7 +16,6 @@ const AnimalPreview = ({ ingredients,price }) => {
         className={classes.color}>
         {result}
       </div>
-      {/* <div className={classes.price}>{price} som</div> */}
       <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>
   );
