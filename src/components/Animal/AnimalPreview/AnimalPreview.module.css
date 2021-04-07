@@ -20,11 +20,12 @@
 }
 
 .price {
-  background-color: tomato;
+ background-color: #dac384;
   border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.5rem;
-  color: white;
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
 }
 
