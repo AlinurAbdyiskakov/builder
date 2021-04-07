@@ -12,13 +12,11 @@
   width: 410px;
  min-height: 430px;
   background-color: #dac384;
- 
-   
   margin-bottom: 1rem;
 }
 .name{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
