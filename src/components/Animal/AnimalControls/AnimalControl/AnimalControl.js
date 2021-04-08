@@ -4,11 +4,11 @@ import classes from "./AnimalControl.module.css";
 
 const AnimalControl = ({ type, add, remove }) => {
    const names = {
-    Dog: "  Dog  ",
+    dog: "  Dog  ",
     pig: "Pig",
     mouse:"Mouse",
     bird:"Bird",
-    Cat:"Cat",
+    cat:"Cat",
     reccoon: "Reccoon",
     turtle:"Turtle",
     parrot:"Parrot",

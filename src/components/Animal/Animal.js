@@ -3,34 +3,35 @@ import AnimalControls from "./AnimalControls/AnimalControls";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Modal from "../UI/Modal/Modal";
 import classes from "./Animal.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Animal = () => {
   const prices = {
-    Dog: 80,
+    dog: 80,
     pig: 70,
     mouse:60,
     bird:40,
-  Cat:20,
+  cat:20,
     reccoon: 67,
     turtle:54,
     parrot:45,
   };
-  const [ingredients, setIngredients] = useState({
-    Dog: 0,
-    pig: 0,
-    mouse: 0,
-    bird:0,
-  Cat:0,
-    reccoon: 0,
-    turtle:0,
-    parrot:0,
+  
+
+const [ingredients, setIngredients] = useState({
   });
-
-
   const [price, setPrice] = useState(0);
   const [canBuy, setCanBuy] = useState(true);
   const [isBuying, setIsBuying] = useState(false);
+useEffect(()=>{
+  axios.get('https://builder-e02c1-default-rtdb.firebaseio.com/default.json')
+  .then(response => {
+    setIngredients(response.data.ingredients);
+    setPrice(response.data.price)
+  })
+},[])
+
 
   function checkCanBuy(newIngredients) {
     const totalIngredients = Object.values(newIngredients)
