@@ -1,11 +1,11 @@
 
 import classes from "./Nav.module.css";
-
+import Navbuilder from "./Navbuilder/Navbuilder"
 const Nav = () => {
   return (
     <div className={classes.Nav}><ul>
-      <li><a href="./Animal/Animal.js">Pet shop builder</a></li>
-      <li><a href="./Navorder/Navorder.js">Authentacte</a></li>
+      <Navbuilder url="/" active>Pet shop builder</Navbuilder>
+      <Navbuilder url="/">Authentacte</Navbuilder>
     </ul></div>
   );
 }

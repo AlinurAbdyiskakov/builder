@@ -1,10 +1,11 @@
 import classes from "./Navbuilder.module.css";
 
-const Navbuilder = ({ }) => {
+const Navbuilder = ({children,url,active }) => {
   return (
-    <div className={classes.Navbuilder}>
-        <h2>Pet Shop builder</h2>
-    </div>
+    <li className={classes.Navbuilder}>
+      <a href={url} className={active ? classes.active : null}>
+        {children}</a> 
+    </li>
   );
 }
 
