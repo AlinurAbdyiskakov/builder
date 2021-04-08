@@ -1,4 +1,4 @@
-.Toolbar{
+/* .Toolbar{
     display: flex;
     justify-content: space-between;
     background-color:#dac384;
@@ -15,11 +15,12 @@
     .Toolbar nav {
       display: none;
     }
-  }
-  /* .Toolbar {
-    /* display: flex;
+  } */
+  .Toolbar {
+    display: flex;
     justify-content: space-between;
     position: sticky;
+    font-family: 'Redressed', cursive; 
     top: 0;
     left: 0;
     padding: 0 1rem;
@@ -27,12 +28,14 @@
   
     font-size: 2rem;
     color: white;
-    background-color: tomato;
+    background-color: #dac384;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
   
-  @media (max-width: 549px) {
+  @media (max-width: 560px) {
     .Toolbar nav {
       display: none;
-    } */
+    }
+  }
+ 
   

@@ -9,9 +9,10 @@ const Toolbar = ({
   return ( <div className = {
       classes.Toolbar
     } >
-    <Logo / >
-    <Nav / >
-    
+   <Logo />
+      <nav>
+        <Nav />
+      </nav>
     <DrawerOpen click = {
       openDrawer
     }
