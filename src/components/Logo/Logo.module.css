@@ -2,6 +2,9 @@
 .Logo {
     display: flex;
     align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-weight: 800;
   }
   .Logo img {
       width: 8rem;
