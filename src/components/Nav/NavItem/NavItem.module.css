@@ -14,7 +14,7 @@ ul{
      color: black;
      font-weight: 900;
      
-     transition: all .2s ease-in;
+     transition: all .5s ease-in;
   }
   a:hover{
     background-color: blanchedalmond ;
@@ -27,6 +27,7 @@ ul{
   a:active{
     background-color: lime;
   }
+  
  
   
     .NavItem a {

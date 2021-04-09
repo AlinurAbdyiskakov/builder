@@ -16,7 +16,7 @@ const AnimalAll = ({ type ,fixed }) => {
   
    dog: { backgroundImage: `url(${dogBackground})`, width: "50px", height: "50px" },
    cat: { backgroundImage: `url(${cat})`, width: "50px", height: "50px" },
-   pig: { backgroundImage: `url(${pigBackground})`, width: "50px", height: "50px" },
+   pig: { backgroundImage: `url(${pigBackground})`, width: "50px", height: "50px",},
     turtle: { backgroundImage: `url(${turtle})`, width: "50px", height: "50px" },
     reccoon: { backgroundImage: `url(${reccoon})`, width: "50px", height: "50px"  },
     bird:{ backgroundImage: `url(${bird})`, width: "50px", height: "50px"  },
