@@ -1,6 +1,8 @@
-import Button from "../../../UI/Button/Button";
 
+import Button from "../../../UI/Button/Button";
 import classes from "./AnimalControl.module.css";
+
+
 
 const AnimalControl = ({ type, add, remove }) => {
    const names = {
@@ -13,11 +15,15 @@ const AnimalControl = ({ type, add, remove }) => {
     turtle:"Turtle",
     parrot:"Parrot",
    }
+   
+   
+   
   return (
     <div className={classes.AnimalControl}>
  <Button onClick={() => add(type)}>+</Button>
       <div className={classes.ingredient}>
         {names[type]}
+        
       </div>
       <Button onClick={() => remove(type)}>-</Button>
     </div>
