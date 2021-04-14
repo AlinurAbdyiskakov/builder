@@ -16,7 +16,7 @@ const AnimalControl = ({ type, add, remove }) => {
     parrot:"Parrot",
    }
    
-   
+  
    
   return (
     <div className={classes.AnimalControl}>
