@@ -1,5 +1,5 @@
 import classes from "./Logo.module.css";
-import logo from "../../imges/pet-shop.svg";
+import logo from "../../imges/logo-Animal-shop.png";
 
 
 const Logo = ()=> {
