@@ -11,10 +11,10 @@ const Animal = () => {
     dog: 80,
     pig: 70,
     mouse:60,
-    bird:40,
+   
   cat:20,
     reccoon: 67,
-    turtle:54,
+   
     parrot:45,
   };
   
