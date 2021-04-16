@@ -4,7 +4,7 @@ import NavItem from "./NavItem/NavItem"
 const Nav = () => {
   return (
     <ul className={classes.Nav}>
-      <NavItem url="/" active>Pet shop builder</NavItem>
+      <NavItem url="/" exact>Pet shop builder</NavItem>
       <NavItem url="/">Authentacte</NavItem>
     </ul>
   );
