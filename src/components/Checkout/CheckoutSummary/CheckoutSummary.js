@@ -7,12 +7,12 @@ const CheckoutSummary = ({ cancelCallback }) => {
     <div className={classes.CheckoutSummary}>
       <div>
         <AnimalPreview ingredients={{
-          almaz1: 180,
-          amber1: 140,
-          izmurud1: 80,
-          rubin1: 130,
-          silver2: 60,
-          zoloto2: 90,
+          dog: 80,
+          pig: 70,
+          mouse:60,
+          cat:20,
+          reccoon: 67,
+          parrot:45,
         }} price={150} />
       </div>
       <div>
@@ -22,5 +22,5 @@ const CheckoutSummary = ({ cancelCallback }) => {
     </div>
   );
 }
-
+ 
 export default CheckoutSummary;

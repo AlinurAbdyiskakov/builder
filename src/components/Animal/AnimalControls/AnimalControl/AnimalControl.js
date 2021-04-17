@@ -1,24 +1,11 @@
 
 import Button from "../../../UI/Button/Button";
 import classes from "./AnimalControl.module.css";
-import expp from "../../../../Audio/exp.mp3";
-import plusP from "../../../../Audio/plus.mp3";
+
 
 
 const AnimalControl = ({ type, add, remove }) => {
-  function playExp() {
-    let exp = new Audio();
-    exp.preload = "auto";
-    exp.src = expp;
-    exp.play();
-  }
-  function playPlus() {
-    let plus = new Audio();
-    plus.preload = "auto";
-    plus.src = plusP;
-    plus.play();
-  }
-
+ 
   
   
   
@@ -39,7 +26,7 @@ const AnimalControl = ({ type, add, remove }) => {
         className={classes.plus}
         onClick={() => {
           remove(type);
-          playPlus();
+        
         }}
       >
         -
@@ -63,7 +50,7 @@ const AnimalControl = ({ type, add, remove }) => {
         className={classes.minus}
         onClick={() => {
           add(type);
-          playExp();
+          
         }}
       >
         +
