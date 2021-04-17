@@ -9,7 +9,7 @@
 
 @media (max-width: 549px) {
   .Nav {
-    
+    z-index: 2;
   flex-direction: column;
     margin-top: 1rem;
   }
