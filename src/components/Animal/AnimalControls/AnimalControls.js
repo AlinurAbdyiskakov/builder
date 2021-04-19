@@ -1,35 +1,33 @@
+
 import Button from "../../UI/Button/Button";
 import AnimalControl from "./AnimalControl/AnimalControl";
 import classes from "./AnimalControls.module.css";
 
 const AnimalControls = ({
-    ingredients,
-    addIngredient,
-    removeIngredient,
-    canBuy,
-    setIsBuying
-  }) => {
+  ingredients,
+  addIngredient,
+  removeIngredient,
+  startOrdering
+}) => {
   const results = [];
+  let total = 0;
   for (const ingredient in ingredients) {
+    
+    total += ingredients[ingredient];
+  
     results.push(<AnimalControl
         key={ingredient}
         add={addIngredient}
         remove={removeIngredient}
-        type={ingredient} />
-        )
+        count={ingredients[ingredient]}
+        type={ingredient} />)
   }
 
   return (
     <div className={classes.AnimalControls}>
-   
-      <strong >Animal house</strong>
+      <strong>Ingredients</strong>
       {results}
-    
-      <Button
-        onClick={() => setIsBuying(true)}
-        disabled={!canBuy}>
-          Order
-      </Button>
+      <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>
   );
 }
