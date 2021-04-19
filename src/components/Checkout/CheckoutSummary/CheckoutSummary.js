@@ -6,14 +6,11 @@ const CheckoutSummary = ({ cancelCallback }) => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
-        <AnimalPreview ingredients={{
-          dog: 80,
-          pig: 70,
-          mouse:60,
-          cat:20,
-          reccoon: 67,
-          parrot:45,
-        }} price={342} />
+        <AnimalPreview levels={{
+          floor1: 5, 
+          floor2: 10,
+          floor3: 50,
+        }} price={150} />
       </div>
       <div>
         <Button>Checkout</Button>

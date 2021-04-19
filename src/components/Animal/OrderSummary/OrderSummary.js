@@ -11,8 +11,7 @@ const OrderSummary = ({ ingredients, price,}) => {
       </ul>
       <strong>Total price: {price.toFixed(1)} som</strong>
       <div className={classes.div}>
-      <button className={classes.button1}>order</button>
-      <button className={classes.button2}>back</button></div>
+     </div>
     </div>
   );
 }
