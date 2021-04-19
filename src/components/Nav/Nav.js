@@ -1,13 +1,12 @@
-
 import classes from "./Nav.module.css";
-import NavItem from "./NavItem/NavItem"
+import NavItem from "./NavItem/NavItem";
 const Nav = () => {
-  return (
-    <ul className={classes.Nav}>
-       <NavItem url="/" exact>Builder</NavItem>
+    return (
+        <ul className={classes.Nav}>
+         <NavItem url="/" exact>Builder</NavItem>
       <NavItem url="/checkout">Checkout</NavItem>
-    </ul>
-  );
+        </ul>
+    )
 }
 
 export default Nav;

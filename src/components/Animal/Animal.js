@@ -18,44 +18,8 @@ const Animal = ({history}) => {
   };
   
 
-// const [ingredients, setIngredients] = useState({
-//   });
-//   const [price, setPrice] = useState(0);
-//   const [canBuy, setCanBuy] = useState(true);
-//   const [isBuying, setIsBuying] = useState(false);
-// useEffect(()=>{
-//   axios.get('https://builder-e02c1-default-rtdb.firebaseio.com/default.json')
-//   .then(response => {
-//     setIngredients(response.data.ingredients);
-//     setPrice(response.data.price)
-//   })
-// },[])
 
-
-//   function checkCanBuy(newIngredients) {
-//     const totalIngredients = Object.values(newIngredients)
-//       .reduce((total, current) => total + current);
-//     setCanBuy(totalIngredients > 0);
-//   }
-
-
-//   function addIngredient(type) {
-//     const newIngredients = { ...ingredients };
-//     newIngredients[type]++;
-//     checkCanBuy(newIngredients);
-//     setPrice(price + prices[type]);
-//     setIngredients(newIngredients);
-//   }
-
-//   function removeIngredient(type) {
-//     if (ingredients[type]){
-//     const newIngredients = { ...ingredients };
-//     newIngredients[type]--;
-//     checkCanBuy(newIngredients);
-//     setPrice(price - prices[type]);
-//     setIngredients(newIngredients);
-//    } }
-const [ingredients, setIngredients] = useState({});
+const [ingredients, setAnimals] = useState({});
 const [price, setPrice] = useState(0);
 const [ordering, setOrdering] = useState(false);
 
@@ -67,10 +31,8 @@ function loadDefaults() {
     .then(response => {
       setPrice(response.data.price);
 
-      // For arrays
-      // setIngredients(Object.values(response.data.ingredients));
-      // For objects
-      setIngredients(response.data.ingredients);
+      
+      setAnimals(response.data.ingredients);
     });
 }
 
@@ -78,7 +40,7 @@ function addIngredient(type) {
   const newIngredients = { ...ingredients };
   newIngredients[type]++;
   setPrice(price + prices[type]);
-  setIngredients(newIngredients);
+  setAnimals(newIngredients);
 }
 
 function removeIngredient(type) {
@@ -86,7 +48,7 @@ function removeIngredient(type) {
     const newIngredients = { ...ingredients };
     newIngredients[type]--;
     setPrice(price - prices[type]);
-    setIngredients(newIngredients);
+    setAnimals(newIngredients);
   }
 }
 
@@ -132,29 +94,13 @@ return (
           ingredients={ingredients}
           price={price}
           />
-        <Button onClick={finishOrdering} green>Checkout</Button>
+        <Button onClick={finishOrdering} >Checkout</Button>
         <Button onClick={stopOrdering}>Cancel</Button>
       </Modal>
   </div>
 );
 }
 
-//   return (
-//     <div className={classes.Animal}>
-//         <Modal show={isBuying} cancelCallback={() => setIsBuying(false)}>
-//        <OrderSummary ingredients={ingredients} price={price} /></Modal>
-//       <AnimalPreview ingredients={ingredients}
-//       price={price} />
-//       <AnimalControls
-      
-//        canBuy={canBuy}
-//        setIsBuying={setIsBuying}
-//         ingredients={ingredients}
-//         addIngredient={addIngredient}
-//         removeIngredient={removeIngredient}
-//         />
-//     </div>
-//   );
-// }
+
 
 export default Animal;
