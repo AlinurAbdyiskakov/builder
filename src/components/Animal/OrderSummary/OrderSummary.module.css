@@ -28,3 +28,9 @@
     border-radius: 10px;
     border: none;
 }
+ul{
+    list-style: none; font-family: 'Quicksand', sans-serif;
+}
+strong{
+    font-family: 'Quicksand', sans-serif;
+}
