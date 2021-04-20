@@ -32,11 +32,6 @@ const AnimalControl = ({ type, add, remove }) => {
         -
       </Button>
 
-
-
- {/* <Button onClick={() => remove(type),playPlus()}>-</Button> */}
-
-
       <div className={classes.ingredient}>
 
 
@@ -44,7 +39,7 @@ const AnimalControl = ({ type, add, remove }) => {
         {names[type]}
         
       </div>
-      {/* <Button onClick={() => add(type)}>+</Button> */}
+ 
 
       <Button
         className={classes.minus}

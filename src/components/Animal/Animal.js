@@ -65,9 +65,9 @@ function finishOrdering() {
     .post('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json', {
       ingredients: ingredients,
       price: price,
-      address: "1234 Jusaeva str",
-      phone: "0 777 777 777",
-      name: "Sadyr Japarov",
+      address: "28.08.2004",
+      phone: "0 552 955 915",
+      name: "Alinur Abdyiskakov",
     })
     .then(() => {
       setOrdering(false);
