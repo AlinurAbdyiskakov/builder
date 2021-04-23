@@ -5,6 +5,7 @@
     font-family: 'Quicksand', sans-serif;
     color: black;
     font-weight: 800;
+   
   }
   .Logo img {
       width: 6rem;
@@ -12,5 +13,5 @@
     margin: .5rem;
   }
   span{
-    margin-top: 13px;
+    margin-top: 17px; font-size: 30px;
   }
