@@ -67,7 +67,7 @@ function finishOrdering() {
       price: price,
       address: "28.08.2004",
       phone: "0 552 955 915",
-      name: "Alinur Abdyiskakov",
+      name: "Alinur.Abdyiskakov.Kubatbecovech",
     })
     .then(() => {
       setOrdering(false);
