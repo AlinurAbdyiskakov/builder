@@ -7,7 +7,10 @@
     font-weight: 800;
   }
   .Logo img {
-      width: 8rem;
-    height: 6rem;
+      width: 6rem;
+    height: 4rem;
     margin: .5rem;
+  }
+  span{
+    margin-top: 13px;
   }
