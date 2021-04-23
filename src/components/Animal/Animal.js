@@ -9,12 +9,12 @@ import axios from "axios";
 
 const Animal = ({history}) => {
   const prices = {
-    dog: 80,
-    pig: 70,
-    mouse:60,
-    cat:20,
-    reccoon: 67,
-    parrot:45,
+    Dog: 80,
+    Pig: 70,
+    Mouse:60,
+    Cat:20,
+    Reccoon: 67,
+    Parrot:45,
   };
   
 

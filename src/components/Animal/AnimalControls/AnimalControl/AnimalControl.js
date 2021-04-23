@@ -10,12 +10,12 @@ const AnimalControl = ({ type, add, remove }) => {
   
   
   const names = {
-    dog: "  Dog  ",
-    pig: "Pig",
-    mouse:"Mouse",
-    cat:"Cat",
-    reccoon: "Reccoon",
-    parrot:"Parrot",
+    Dog: "  Dog  ",
+    Pig: "Pig",
+    Mouse:"Mouse",
+    Cat:"Cat",
+    Reccoon: "Reccoon",
+    Parrot:"Parrot",
    }
    
   

@@ -14,14 +14,14 @@ import parrot from "../../../imges/parrot.svg"
 const AnimalAll = ({ type ,fixed }) => {
   const types = {
   
-   dog: { backgroundImage: `url(${dogBackground})`, width: "50px", height: "50px"},
-   cat: { backgroundImage: `url(${cat})`, width: "50px", height: "50px" },
-   pig: { backgroundImage: `url(${pigBackground})`, width: "50px", height: "50px",},
+   Dog: { backgroundImage: `url(${dogBackground})`, width: "50px", height: "50px"},
+   Cat: { backgroundImage: `url(${cat})`, width: "50px", height: "50px" },
+   Pig: { backgroundImage: `url(${pigBackground})`, width: "50px", height: "50px",},
    
-    reccoon: { backgroundImage: `url(${reccoon})`, width: "50px", height: "50px"  },
+    Reccoon: { backgroundImage: `url(${reccoon})`, width: "50px", height: "50px"  },
    
-    mouse:{ backgroundImage: `url(${mouse})`, width: "50px", height: "50px"  },
-    parrot:{ backgroundImage: `url(${parrot})`, width: "50px", height: "50px"  },
+    Mouse:{ backgroundImage: `url(${mouse})`, width: "50px", height: "50px"  },
+    Parrot:{ backgroundImage: `url(${parrot})`, width: "50px", height: "50px"  },
   };
   return (
     <div className={classes.AnimalAll} style={types[type]}></div>
