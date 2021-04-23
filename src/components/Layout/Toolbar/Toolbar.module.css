@@ -18,7 +18,7 @@
   } */
   .Toolbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: sticky;
     font-family: 'Redressed', cursive; 
     top: 0;
@@ -27,6 +27,7 @@
     z-index: 1;
   
     font-size: 2rem;
+    width: 100%;
     color: white;
     background-color: #dac384;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
