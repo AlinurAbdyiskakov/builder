@@ -1,21 +1,4 @@
-/* .Toolbar{
-    display: flex;
-    justify-content: space-between;
-    background-color:#dac384;
-    font-size: 17px;
-    color: white;
-    font-family: 'Redressed', cursive; 
-    padding: 1px;
-    position: sticky;
-    top:0;
-    left:0;
-  
-  }
-  @media (max-width: 549px) {
-    .Toolbar nav {
-      display: none;
-    }
-  } */
+
   .Toolbar {
     display: flex;
     justify-content: space-around;
