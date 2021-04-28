@@ -78,6 +78,7 @@ function finishOrdering() {
 
 return (
   <div className={classes.Animal}>
+    <div className={classes.Aimall}>
     <AnimalPreview
       ingredients={ingredients}
       price={price} />
@@ -96,7 +97,7 @@ return (
           />
         <Button onClick={finishOrdering} >Checkout</Button>
         <Button onClick={stopOrdering}>Cancel</Button>
-      </Modal>
+      </Modal></div>
   </div>
 );
 }
