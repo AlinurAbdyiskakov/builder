@@ -36,6 +36,7 @@ const Checkout = ({ history }) => {
       <CheckoutSummary
         submitCallback={submitCallback}
         cancelCallback={cancelCallback} />
+      
     </div>
   );
 }
