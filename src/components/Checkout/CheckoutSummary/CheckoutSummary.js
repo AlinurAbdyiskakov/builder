@@ -1,8 +1,9 @@
 import classes from "./CheckoutSummary.module.css";
 import AnimalPreview from "../../Animal/AnimalPreview/AnimalPreview";
-import Button from "../../UI/Button/Button";
+// import Button from "../../UI/Button/Button";
+import ChacoutForm from "./ChackoutForm/ChackoutForm";
 
-const CheckoutSummary = ({ cancelCallback }) => {
+const CheckoutSummary = () => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
@@ -15,10 +16,7 @@ const CheckoutSummary = ({ cancelCallback }) => {
           Parrot:4,
         }} price={342} />
       </div>
-      <div>
-        <Button>Checkout</Button>
-        <Button onClick={cancelCallback}>Cancel</Button>
-      </div>
+     <ChacoutForm/>
     </div>
   );
 }
