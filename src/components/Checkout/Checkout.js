@@ -15,12 +15,12 @@ const Checkout = ({ history }) => {
       phone: data.get('phone'),
       address: data.get('address'),
       ingredients:{
-        Dog: 80,
-        Pig: 70,
-        Mouse:60,
-        Cat:20,
-        Reccoon: 67,
-        Parrot:45,
+        Dog: 1,
+        Pig:1,
+        Mouse:1,
+        Cat:1,
+        Reccoon: 1,
+        Parrot:1,
       }
     }
     axios.post('https://builder-e02c1-default-rtdb.firebaseio.com/orders.json',order)
