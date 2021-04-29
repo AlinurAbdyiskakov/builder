@@ -4,6 +4,7 @@ import Animal from "./components/Animal/Animal" ;
 import Checkout from "./components/Checkout/Checkout"
 import "./App.css" ;
 import { Redirect, Route, Switch } from "react-router";
+import Orders from "./components/Orders/Orders";
 const App =() =>{
   return (
     <div className="App">
@@ -11,6 +12,7 @@ const App =() =>{
         <Switch>
     <Route path="/"component={Animal}exact/>
     <Route path="/checkout"component={Checkout}/>
+    <Route path="/orders" component={Orders} />
     <Redirect to="/"/>
     </Switch>
     </Layout>
