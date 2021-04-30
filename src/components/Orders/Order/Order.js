@@ -7,7 +7,7 @@ const Order = ({ name, phone, address, ingredients }) => {
       <li>Name: {name}</li>
       <li>Phone: {phone}</li>
       <li>Address: {address}</li>
-      <li>Ingredients: {output}</li>
+      <li>Animal pet shop: {output}</li>
     </ul>
   );
 }
