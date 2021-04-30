@@ -7,7 +7,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    axios.get('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json')
+    axios.get('https://builder-e02c1-default-rtdb.firebaseio.com/orders.json')
       .then(response => {
         setOrders(Object.values(response.data));
       });
