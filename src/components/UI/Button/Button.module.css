@@ -2,7 +2,6 @@
   font-family: 'Titillium Web', sans-serif;
   border: 0;
   margin: 0 .5rem;
-  border-radius: 50%;
   min-width: 2rem;
   min-height: 2rem;
   padding: 0 1rem;
@@ -11,6 +10,7 @@
   font-weight: bold;
   font-size: 1.5rem;
   cursor: pointer;
+border-radius: 15px;
 }
 .Button:not(:disabled):hover {
   background-color: violet;
