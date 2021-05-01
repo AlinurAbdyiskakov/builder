@@ -10,6 +10,7 @@ const Order = ({ name, phone, address, ingredients }) => {
       <li>Animal  pet  shop: {output}</li>
       <li><strong>Thanks for your purchase</strong></li>
     </ul>
+    // хамелион черепаха енот кошка хамяк сабака
   );
 }
 

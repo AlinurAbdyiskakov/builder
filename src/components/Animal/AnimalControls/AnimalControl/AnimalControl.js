@@ -4,7 +4,7 @@ import classes from "./AnimalControl.module.css";
 
 
 
-const AnimalControl = ({ type, add, remove }) => {
+const AnimalControl = ({ type, add, remove,total }) => {
  
   
   
@@ -22,10 +22,9 @@ const AnimalControl = ({ type, add, remove }) => {
    
   return (
     <div className={classes.AnimalControl}>
-  <Button
-        className={classes.plus}
-        onClick={() => {
-          remove(type);
+  <Button className={classes.plus}
+ 
+   onClick={() => {remove(type);
         
         }}
       >
@@ -43,6 +42,7 @@ const AnimalControl = ({ type, add, remove }) => {
 
       <Button
         className={classes.minus}
+     
         onClick={() => {
           add(type);
           

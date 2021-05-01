@@ -25,7 +25,7 @@ const AnimalControls = ({
 
   return (
     <div className={classes.AnimalControls}>
-      <strong>Ingredients</strong>
+      <strong>Animal</strong>
       {results}
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>
