@@ -7,9 +7,11 @@ const Order = ({ name, phone, address, ingredients }) => {
       <li>Name:<strong>{name}</strong> </li>
       <li>Phone:<strong>{phone}</strong> </li>
       <li>Address:<strong>{address}</strong> </li>
-      <li>Animal  pet  shop: {output}</li>
-      <li><strong>Thanks for your purchase</strong></li>
+      <li >Animal  pet  shop: {output}</li>
+      <li><strong>Thanks for your purchase</strong></li>  
+       <div>@Alinur</div>
     </ul>
+ 
     // хамелион черепаха енот кошка хамяк сабака
   );
 }
