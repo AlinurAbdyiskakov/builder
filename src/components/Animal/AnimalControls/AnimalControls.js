@@ -4,22 +4,22 @@ import AnimalControl from "./AnimalControl/AnimalControl";
 import classes from "./AnimalControls.module.css";
 
 const AnimalControls = ({
-  ingredients,
-  addIngredient,
-  removeIngredient,
+  animals,
+  // addIngredient,
+  // removeIngredient,
   startOrdering
 }) => {
   const results = [];
   let total = 0;
-  for (const ingredient in ingredients) {
+  for (const animal in animals) {
     
-    total += ingredients[ingredient];
+    total += animals[animal];
   
     results.push(<AnimalControl
-        key={ingredient}
+        key={animal}
     
-        count={ingredients[ingredient]}
-        type={ingredient} />)
+        count={animals[animal]}
+        type={animal} />)
   }
 
   return (

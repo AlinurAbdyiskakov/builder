@@ -7,7 +7,7 @@ const CheckoutSummary = ({submitCallback,cancelCallback}) => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
-      <AnimalPreview ingredients={{
+      <AnimalPreview animals={{
           Dog: 8,
           Pig: 7,
           Mouse:6,

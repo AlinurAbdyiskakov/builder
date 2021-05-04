@@ -18,9 +18,9 @@ const dispatch=useDispatch();
    
   return (
     <div className={classes.AnimalControl}>
-        <Button onClick={() => dispatch({ type: "ADD_ANIMAL", ingredient: type })}>+</Button>
+        <Button onClick={() => dispatch({ type: "ADD_ANIMAL", animal: type })}>+</Button>
         {names[type]}
-        <Button onClick={() => dispatch({ type: "REMOVE_ANIMAL", ingredient: type })} disabled={!count}>-</Button>
+        <Button onClick={() => dispatch({ type: "REMOVE_ANIMAL", animal: type })} disabled={!count}>-</Button>
     </div>
   );
 }

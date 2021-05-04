@@ -1,5 +1,5 @@
 const initialState ={
-    ingredients:{
+    animals:{
         Dog: 1,
         Pig: 1,
         Mouse:1,
@@ -24,12 +24,12 @@ const AnimalReducer=(state=initialState,action)=>{
     const newState={...state};
     switch (action.type) {
         case "ADD_ANIMAL":
-            newState.ingredients[action.ingredient]++; 
-            newState.price+=prices[action.ingredient]
+            newState.animals[action.animal]++; 
+            newState.price+=prices[action.animal]
             break;
             case "REMOVE_ANIMAL":
-                newState.ingredients[action.ingredient]--; 
-                newState.price-=prices[action.ingredient]
+                newState.animals[action.animal]--; 
+                newState.price-=prices[action.animal]
                 break;
         default:
             break;

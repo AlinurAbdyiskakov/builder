@@ -2,11 +2,11 @@ import AnimalAll from "../AnimalAll/AnimalAll";
 import classes from "./AnimalPreview.module.css";
 
 
-const AnimalPreview = ({ ingredients,price }) => {
+const AnimalPreview = ({ animals,price }) => {
   const result = [];
-  for (const ingredient in ingredients) {
-    for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<AnimalAll key={[ingredient + i]} type={[ingredient]} />)
+  for (const animal in animals) {
+    for (let i = 0; i < animals[animal]; i++) {
+      result.push(<AnimalAll key={[animal + i]} type={[animal]} />)
     }
   }
 
