@@ -17,8 +17,7 @@ const AnimalControls = ({
   
     results.push(<AnimalControl
         key={ingredient}
-        add={addIngredient}
-        remove={removeIngredient}
+    
         count={ingredients[ingredient]}
         type={ingredient} />)
   }

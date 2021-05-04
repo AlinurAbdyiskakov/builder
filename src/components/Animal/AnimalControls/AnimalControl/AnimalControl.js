@@ -1,15 +1,12 @@
 
 import Button from "../../../UI/Button/Button";
 import classes from "./AnimalControl.module.css";
+import { useDispatch } from "react-redux";
 
 
 
-const AnimalControl = ({ type, add, remove,count }) => {
- 
-
-  
-  
-  
+const AnimalControl = ({ type, count }) => {
+const dispatch=useDispatch();
   const names = {
     Dog: "  Dog  ",
     Pig: "Pig",
@@ -19,38 +16,11 @@ const AnimalControl = ({ type, add, remove,count }) => {
     Parrot:"Parrot",
    }
    
-  
-   
   return (
     <div className={classes.AnimalControl}>
-  <Button className={classes.plus}
- disabled={!count}
-   onClick={() => {remove(type);
-        
-        }}
-      >
-        -
-      </Button>
-
-      <div className={classes.ingredient}>
-
-
-
+        <Button onClick={() => dispatch({ type: "ADD_ANIMAL", ingredient: type })}>+</Button>
         {names[type]}
-        
-      </div>
- 
-
-      <Button
-        className={classes.minus}
-     
-        onClick={() => {
-          add(type);
-          
-        }}
-      >
-        +
-      </Button>
+        <Button onClick={() => dispatch({ type: "REMOVE_ANIMAL", ingredient: type })} disabled={!count}>-</Button>
     </div>
   );
 }
