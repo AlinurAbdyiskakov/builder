@@ -33,6 +33,7 @@ const Checkout = ({ history }) => {
     <div className={classes.Checkout}> <CheckoutForm
         cancelCallback={cancelCallback}
         submitCallback={submitCallback} />
+        <br/>
       <AnimalPreview animals={animals} price={price} />
      
     </div>
