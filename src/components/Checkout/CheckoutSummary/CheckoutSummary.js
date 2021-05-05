@@ -8,12 +8,12 @@ const CheckoutSummary = ({submitCallback,cancelCallback}) => {
     <div className={classes.CheckoutSummary}>
       <div>
       <AnimalPreview animals={{
-          Dog: 8,
-          Pig: 7,
-          Mouse:6,
-          Cat:2,
-          Reccoon: 6,
-          Parrot:4,
+          Dog: 1,
+          Pig: 1,
+          Mouse:1,
+          Cat:1,
+          Reccoon: 1,
+          Parrot:1,
         }} price={342} />
       </div>
      <ChacoutForm

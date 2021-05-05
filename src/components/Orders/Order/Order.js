@@ -1,6 +1,6 @@
 import classes from "./Order.module.css";
 
-const Order = ({ name, phone, address, animals }) => {
+const Order = ({ name, phone, address, animals,price }) => {
   const output = Object.keys(animals).map(label => <em>{label}: - {animals[label]}</em>)
   return (
     <ul className={classes.Order}>
@@ -8,6 +8,7 @@ const Order = ({ name, phone, address, animals }) => {
       <li>Phone:<strong>{phone}</strong> </li>
       <li>Address:<strong>{address}</strong> </li>
       <li >Animal  pet  shop: {output}</li>
+      <li >the buy som {price}</li>
       <li><strong>Thanks for your purchase</strong></li>  
        <div>@Alinur</div>
     </ul>

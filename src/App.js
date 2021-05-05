@@ -8,8 +8,7 @@ import Orders from "./components/Orders/Orders";
 const App =() =>{
   return (
     <div className="App">
-      <Layout>
-        <Switch>
+      <Layout>      <Switch>
     <Route path="/"component={Animal}exact/>
     <Route path="/checkout"component={Checkout}/>
     <Route path="/orders" component={Orders} />
