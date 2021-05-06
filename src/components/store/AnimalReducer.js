@@ -1,7 +1,7 @@
 const initialState ={
     animals:{
         Dog: 1,
-        Pig: 1,
+        Chameleon: 1,
         Mouse:1,
         Cat:1,
         Reccoon: 1,
@@ -12,7 +12,7 @@ const initialState ={
 
 const prices = {
     Dog: 80,
-    Pig: 70,
+    Chameleon: 70,
     Mouse:60,
     Cat:20,
     Reccoon: 67,

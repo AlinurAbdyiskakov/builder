@@ -4,7 +4,7 @@ import classes from "./AnimalAll.module.css";
 
 import dogBackground from "../../../imges/dog.svg";
 import cat from "../../../imges/cat.svg";
-import pigBackground from "../../../imges/pig.svg";
+import chameleon from "../../../imges/pig.svg";
 import reccoon from "../../../imges/raccoon.svg";
 import mouse from"../../../imges/mouse.svg";
 import Hamster from "../../../imges/parrot.svg"
@@ -16,7 +16,7 @@ const AnimalAll = ({ type ,fixed }) => {
   
    Dog: { backgroundImage: `url(${dogBackground})`, width: "50px", height: "50px"},
    Cat: { backgroundImage: `url(${cat})`, width: "50px", height: "50px" },
-   Pig: { backgroundImage: `url(${pigBackground})`, width: "50px", height: "50px",},
+   Chameleon: { backgroundImage: `url(${chameleon})`, width: "60px", height: "60px",},
    
     Reccoon: { backgroundImage: `url(${reccoon})`, width: "50px", height: "50px"  },
    
