@@ -13,7 +13,7 @@ const CheckoutSummary = ({submitCallback,cancelCallback}) => {
           Mouse:1,
           Cat:1,
           Reccoon: 1,
-          Parrot:1,
+          Hamster:1,
         }} price={342} />
       
      <ChacoutForm

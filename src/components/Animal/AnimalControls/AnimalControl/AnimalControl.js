@@ -13,7 +13,7 @@ const dispatch=useDispatch();
     Mouse:"Mouse",
     Cat:"Cat",
     Reccoon: "Reccoon",
-    Parrot:"Parrot",
+    Hamster:"Hamster",
    }
    
   return (

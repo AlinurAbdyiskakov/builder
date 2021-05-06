@@ -5,7 +5,7 @@ const initialState ={
         Mouse:1,
         Cat:1,
         Reccoon: 1,
-        Parrot:1,
+        Hamster:1,
     },
     price:342,
 };
@@ -16,7 +16,7 @@ const prices = {
     Mouse:60,
     Cat:20,
     Reccoon: 67,
-    Parrot:45,
+    Hamster:45,
   };
   
 
