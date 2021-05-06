@@ -30,13 +30,13 @@ const Checkout = ({ history }) => {
   }
 
   return (
-    <div className={classes.Checkout}> <CheckoutForm
+    <div className={classes.Checkout}>
+      <AnimalPreview animals={animals} price={price} /> 
+      <CheckoutForm
         cancelCallback={cancelCallback}
         submitCallback={submitCallback} />
-        <br/>
-      <AnimalPreview animals={animals} price={price} />
-     
-    </div>
+     </div>
+
   );
 }
  
