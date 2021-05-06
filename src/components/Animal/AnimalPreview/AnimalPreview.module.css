@@ -2,16 +2,19 @@
   flex: 0 0 410px;
   display: flex;
 justify-content:center ;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   margin-bottom: 1.5rem;
   flex-direction: column;
 
 }
-
+.click{
+  min-height:0px;
+ 
+}
 .color{
   border: solid black 0.1px;
   border-radius: 30px  ;
-  padding:0 15px;
+  padding:0 20px;
   width: 410px;
  min-height: 430px;
   background-color: #dac384;

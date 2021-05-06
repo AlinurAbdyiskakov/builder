@@ -9,11 +9,11 @@ const AnimalControl = ({ type, count }) => {
 const dispatch=useDispatch();
   const names = {
     Dog: "  Dog  ",
-    Chameleon: "Chameleon",
-    Turtle:"Turtle",
     Cat:"Cat",
     Reccoon: "Reccoon",
+Chameleon: "Chameleon",
     Hamster:"Hamster",
+    Turtle:"Turtle",
    }
    
   return (

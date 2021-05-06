@@ -13,11 +13,14 @@ const AnimalPreview = ({ animals,price }) => {
   return (
     <div className={classes.AnimalPreview}
     >
-      <div
-        className={classes.color}style={{ backgroundImage: `url(${icons})` }}>
+      <div className={classes.color}
+       >
+         <div className={classes.click}style={{ backgroundImage: `url(${icons})` }}
+       >
+        
           <div className={classes.name}> {[result]}</div>
        
-      </div>
+      </div></div>
       <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>
   );
