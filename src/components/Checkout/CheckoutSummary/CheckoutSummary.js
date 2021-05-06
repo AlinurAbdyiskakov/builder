@@ -10,7 +10,7 @@ const CheckoutSummary = ({submitCallback,cancelCallback}) => {
       <AnimalPreview animals={{
           Dog: 1,
           Chameleon: 1,
-          Mouse:1,
+          Turtle:1,
           Cat:1,
           Reccoon: 1,
           Hamster:1,

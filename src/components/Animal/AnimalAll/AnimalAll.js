@@ -6,7 +6,7 @@ import dogBackground from "../../../imges/dog.svg";
 import cat from "../../../imges/cat.svg";
 import chameleon from "../../../imges/pig.svg";
 import reccoon from "../../../imges/raccoon.svg";
-import mouse from"../../../imges/mouse.svg";
+import turtle from"../../../imges/mouse.svg";
 import Hamster from "../../../imges/parrot.svg"
 
 
@@ -20,7 +20,7 @@ const AnimalAll = ({ type ,fixed }) => {
    
     Reccoon: { backgroundImage: `url(${reccoon})`, width: "50px", height: "50px"  },
    
-    Mouse:{ backgroundImage: `url(${mouse})`, width: "50px", height: "50px"  },
+    Turtle:{ backgroundImage: `url(${turtle})`, width: "60px", height: "60px"  },
     Hamster:{ backgroundImage: `url(${Hamster})`, width: "50px", height: "50px"  },
   };
   return (

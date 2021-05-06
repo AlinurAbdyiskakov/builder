@@ -10,7 +10,7 @@ const dispatch=useDispatch();
   const names = {
     Dog: "  Dog  ",
     Chameleon: "Chameleon",
-    Mouse:"Mouse",
+    Turtle:"Turtle",
     Cat:"Cat",
     Reccoon: "Reccoon",
     Hamster:"Hamster",
