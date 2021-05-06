@@ -1,6 +1,6 @@
 import AnimalAll from "../AnimalAll/AnimalAll";
 import classes from "./AnimalPreview.module.css";
-
+import icons from"../../../imges/controls.png";
 
 const AnimalPreview = ({ animals,price }) => {
   const result = [];
@@ -11,9 +11,10 @@ const AnimalPreview = ({ animals,price }) => {
   }
 
   return (
-    <div className={classes.AnimalPreview}>
+    <div className={classes.AnimalPreview}
+    >
       <div
-        className={classes.color}>
+        className={classes.color}style={{ backgroundImage: `url(${icons})` }}>
           <div className={classes.name}> {[result]}</div>
        
       </div>
