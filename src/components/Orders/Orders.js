@@ -4,6 +4,8 @@ import Order from "./Order/Order";
 import classes from "./Orders.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { load } from "../store/actions/orders";
+import withAxios from "../withAxios";
+import axios from "../../axios";
 const Orders = () => {
   const dispatch = useDispatch();
   const orders = useSelector(state => state.orders);
@@ -19,4 +21,4 @@ const Orders = () => {
   );
 }
 
-export default Orders;
+export default withAxios(Orders,axios) ;

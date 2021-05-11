@@ -4,6 +4,8 @@ import OrderSummary from "./OrderSummary/OrderSummary";
 import Modal from "../UI/Modal/Modal";
 import classes from "./Animal.module.css";
 import Button from"../UI/Button/Button"
+import withAxios from "../withAxios";
+import axios from "../../axios";
 import { useEffect, useState } from "react";
 import { useSelector,useDispatch } from "react-redux";
 import { load } from "../store/actions/Animal";
@@ -53,4 +55,4 @@ return (
 
 
 
-export default Animal;
+export default withAxios(Animal,axios) ;
