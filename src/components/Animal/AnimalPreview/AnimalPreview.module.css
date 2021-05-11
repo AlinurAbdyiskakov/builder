@@ -1,58 +1,52 @@
 .AnimalPreview {
-  flex: 0 0 410px;
-  display: flex;
+flex: 0 0 410px;
+display: flex;
 justify-content:center ;
-  flex-wrap: wrap-reverse;
-  margin-bottom: 1.5rem;
-  flex-direction: column;
+flex-wrap: wrap-reverse;
+margin-bottom: 1.5rem;
+flex-direction: column;
+}
 
-}
-/* .click{
-  background-size: auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 480px;
-    flex: 1 1 auto;
-    margin-bottom: 70px;
- 
-} */
 .color{
-  border: solid black 0.1px;
-  border-radius: 30px  ;
-  padding:0 20px;
-  width: 410px;
- min-height: 430px;
-  background-color: #dac384;
-  margin-bottom: 2rem;
+border: solid black 0.1px;
+border-radius: 30px  ;
+padding:0 20px;
+width: 410px;
+min-height: 430px;
+background-color: #dac384;
+margin-bottom: 2rem;
 }
+
 .name{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: 30px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-right: 30px;
 }
 
 .price {
- background-color: #dac384;
- margin: 0 auto;
-  border-radius: 1rem;
-  padding: 0 1rem;
-  font-size: 1.5rem;
-  color: black;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-  width: 150px;
-  text-align: center;
+background-color: #dac384;
+margin: 0 auto;
+border-radius: 1rem;
+padding: 0 1rem;
+font-size: 1.5rem;
+color: black;
+font-family: 'Titillium Web', sans-serif;
+font-weight: bold;
+cursor: pointer;
+width: 150px;
+text-align: center;
 }
+
 a:focus {
-  outline: none;
+outline: none;
 }
+
 .ingredients{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
 }
 
 

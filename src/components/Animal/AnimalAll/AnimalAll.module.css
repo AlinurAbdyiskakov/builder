@@ -1,15 +1,9 @@
-
 .AnimalAll{
 margin-top: 12px;
 -webkit-animation: pulsing 3s infinite;
 animation: pulsing 3s infinite;
-
 }
 
-
-
-
-  
   @keyframes pulsing {
     0%{  -webkit-transform: scale(0.7, 0.7);
       transform: scale(0.7, 0.7);
