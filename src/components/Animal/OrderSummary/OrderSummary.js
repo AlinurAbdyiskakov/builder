@@ -1,13 +1,12 @@
 import classes from "./OrderSummary.module.css";
-
 const OrderSummary = ({ animals, price,}) => {
   const Animal = {
-    Dog: "  Dog  ",
-    Cat:"Cat",
-    Reccoon: "Reccoon",
-Chameleon: "Chameleon",
-    Hamster:"Hamster",
-    Turtle:"Turtle",
+  Dog: "  Dog  ",
+  Cat:"Cat",
+  Reccoon: "Reccoon",
+  Chameleon: "Chameleon",
+  Hamster:"Hamster",
+  Turtle:"Turtle",
    
   }
   const results = Object.keys(animals)
@@ -16,9 +15,11 @@ Chameleon: "Chameleon",
   return (
     <div className={classes.OrderSummary}>
       <ul>
-        {results}
+      {results}
       </ul>
-      <strong>Total price: {price.toFixed(1)} som</strong>
+      <strong>Total price: 
+      {price.toFixed(1)} 
+      som</strong>
       <div className={classes.div}>
      </div>
     </div>

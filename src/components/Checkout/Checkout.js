@@ -1,10 +1,9 @@
-
+import { useSelector } from "react-redux";
 import AnimalPreview from "../Animal/AnimalPreview/AnimalPreview";
 import CheckoutForm from "./CheckoutSummary/ChackoutForm/ChackoutForm";
-import classes from "./Checkout.module.css";
 import axios from "../../axios";
 import withAxios from "../withAxios";
-import { useSelector } from "react-redux";
+import classes from "./Checkout.module.css";
 
 const Checkout = ({ history }) => {
   const animals = useSelector(state => state.Animal.animals);
@@ -31,12 +30,12 @@ const Checkout = ({ history }) => {
   }
 
   return (
-    <div className={classes.Checkout}>
-      <AnimalPreview animals={animals} price={price} /> 
-      <CheckoutForm
-        cancelCallback={cancelCallback}
-        submitCallback={submitCallback} />
-     </div>
+ <div className={classes.Checkout}>
+<AnimalPreview animals={animals} price={price} /> 
+<CheckoutForm
+ cancelCallback={cancelCallback}
+ submitCallback={submitCallback} />
+ </div>
 
   );
 }
