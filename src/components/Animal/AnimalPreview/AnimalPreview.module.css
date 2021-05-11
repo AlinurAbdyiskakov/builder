@@ -7,10 +7,15 @@ justify-content:center ;
   flex-direction: column;
 
 }
-.click{
-  min-height:0px;
+/* .click{
+  background-size: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    flex: 1 1 auto;
+    margin-bottom: 70px;
  
-}
+} */
 .color{
   border: solid black 0.1px;
   border-radius: 30px  ;

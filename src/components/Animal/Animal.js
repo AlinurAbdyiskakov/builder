@@ -58,7 +58,7 @@ return (
           animals={animals}
           price={price}
           />
-        <Button onClick={finishOrdering} >Checkout</Button>
+        <Button onClick={finishOrdering} green="green">Checkout</Button>
         <Button onClick={stopOrdering}>Cancel</Button>
       </Modal></div>
   </div>

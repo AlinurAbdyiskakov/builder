@@ -7,8 +7,7 @@ import cat from "../../../imges/cat.svg";
 import chameleon from "../../../imges/pig.svg";
 import reccoon from "../../../imges/raccoon.svg";
 import turtle from"../../../imges/mouse.svg";
-import Hamster from "../../../imges/parrot.svg"
-
+import Hamster from "../../../imges/parrot.svg";
 
 
 const AnimalAll = ({ type ,fixed }) => {
@@ -22,7 +21,8 @@ const AnimalAll = ({ type ,fixed }) => {
    
     Turtle:{ backgroundImage: `url(${turtle})`, width: "60px", height: "60px"  },
     Hamster:{ backgroundImage: `url(${Hamster})`, width: "50px", height: "50px"  },
-  };
+  }
+ 
   return (
     <div className={classes.AnimalAll} style={types[type]}></div>
   );

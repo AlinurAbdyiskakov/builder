@@ -1,6 +1,6 @@
 
 import AnimalPreview from "../Animal/AnimalPreview/AnimalPreview";
-import CheckoutForm from "../Checkout/CheckoutSummary/ChackoutForm/ChackoutForm";
+import CheckoutForm from "./CheckoutSummary/ChackoutForm/ChackoutForm";
 import classes from "./Checkout.module.css";
 import axios from "axios";
 import { useSelector } from "react-redux";
