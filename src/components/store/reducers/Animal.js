@@ -20,7 +20,7 @@ const prices = {
   };
   
 
-const AnimalReducer=(state=initialState,action)=>{
+const Animal=(state=initialState,action)=>{
     const newState={...state};
     switch (action.type) {
         case "ADD_ANIMAL":
@@ -36,4 +36,4 @@ const AnimalReducer=(state=initialState,action)=>{
     }
         return newState ;
     }
-   export default AnimalReducer;
+   export default Animal;
