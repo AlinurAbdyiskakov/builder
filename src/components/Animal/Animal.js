@@ -4,30 +4,16 @@ import OrderSummary from "./OrderSummary/OrderSummary";
 import Modal from "../UI/Modal/Modal";
 import classes from "./Animal.module.css";
 import Button from"../UI/Button/Button"
-import { useState } from "react";
-import { useSelector } from "react-redux";
-
+import { useEffect, useState } from "react";
+import { useSelector,useDispatch } from "react-redux";
+import { load } from "../store/actions/Animal";
 const Animal = ({history}) => {
-  
-
-
+  const dispatch=useDispatch()
 const animals=useSelector(state=>state.Animal.animals);
 const price =useSelector(state=>state.Animal.price);
-
 const [ordering, setOrdering] = useState(false);
 
-// useEffect(loadDefaults, []);
-
-// function loadDefaults() {
-//   axios
-//     .get('https://builder-e02c1-default-rtdb.firebaseio.com/default.json')
-//     .then(response => {
-//       setPrice(response.data.price);
-
-      
-//       setAnimals(response.data.ingredients);
-//     });
-// }
+useEffect(()=>dispatch(load()),[dispatch])
 
 
 function startOrdering() {
