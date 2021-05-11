@@ -1,18 +1,14 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+
+import { useEffect } from "react";
 import Order from "./Order/Order";
 import classes from "./Orders.module.css";
-
+import { useDispatch, useSelector } from "react-redux";
+import { load } from "../store/actions/orders";
 const Orders = () => {
-  const [orders, setOrders] = useState([]);
+  const dispatch = useDispatch();
+  const orders = useSelector(state => state.orders);
 
-  useEffect(() => {
-    axios.get('https://builder-e02c1-default-rtdb.firebaseio.com/orders.json')
-      .then(response => {
-        setOrders(Object.values(response.data));
-      });
-  }, []);
-
+  useEffect(() => dispatch(load()), [dispatch]);
   const results =  orders.map(order => <Order {...order} />);
 
   return (
