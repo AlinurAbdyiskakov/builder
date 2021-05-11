@@ -11,8 +11,8 @@ const Animal = ({history}) => {
   
 
 
-const animals=useSelector(state=>state.animals);
-const price =useSelector(state=>state.price);
+const animals=useSelector(state=>state.Animal.animals);
+const price =useSelector(state=>state.Animal.price);
 
 const [ordering, setOrdering] = useState(false);
 

@@ -6,8 +6,8 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 
 const Checkout = ({ history }) => {
-  const animals = useSelector(state => state.animals);
-  const price = useSelector(state => state.price);
+  const animals = useSelector(state => state.Animal.animals);
+  const price = useSelector(state => state.Animal.price);
 
   function cancelCallback() {
     history.replace('/');
