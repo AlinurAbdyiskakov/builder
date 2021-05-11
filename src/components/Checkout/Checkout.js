@@ -2,7 +2,7 @@
 import AnimalPreview from "../Animal/AnimalPreview/AnimalPreview";
 import CheckoutForm from "./CheckoutSummary/ChackoutForm/ChackoutForm";
 import classes from "./Checkout.module.css";
-import axios from "axios";
+import axios from "../../axios";
 import { useSelector } from "react-redux";
 
 const Checkout = ({ history }) => {
@@ -16,7 +16,7 @@ const Checkout = ({ history }) => {
   function submitCallback(event) {
     const data = new FormData(event.target);
 
-    axios.post('https://builder-e02c1-default-rtdb.firebaseio.com/orders.json', {
+    axios.post('/orders.json', {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
