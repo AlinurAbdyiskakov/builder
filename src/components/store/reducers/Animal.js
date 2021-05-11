@@ -1,3 +1,5 @@
+import { REMOVE_ANIMAL,ADD_ANIMAL } from "../actions/types";
+
 const initialState ={
     animals:{
         Dog: 1,
@@ -23,11 +25,11 @@ const prices = {
 const Animal=(state=initialState,action)=>{
     const newState={...state};
     switch (action.type) {
-        case "ADD_ANIMAL":
+        case ADD_ANIMAL:
             newState.animals[action.animal]++; 
             newState.price+=prices[action.animal]
             break;
-            case "REMOVE_ANIMAL":
+            case REMOVE_ANIMAL:
                 newState.animals[action.animal]--; 
                 newState.price-=prices[action.animal]
                 break;
