@@ -3,6 +3,7 @@ import AnimalPreview from "../Animal/AnimalPreview/AnimalPreview";
 import CheckoutForm from "./CheckoutSummary/ChackoutForm/ChackoutForm";
 import classes from "./Checkout.module.css";
 import axios from "../../axios";
+import withAxios from "../withAxios";
 import { useSelector } from "react-redux";
 
 const Checkout = ({ history }) => {
@@ -40,4 +41,4 @@ const Checkout = ({ history }) => {
   );
 }
  
-export default Checkout;
+export default withAxios(Checkout, axios);
