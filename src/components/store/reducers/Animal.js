@@ -1,4 +1,4 @@
-import { REMOVE_ANIMAL,ADD_ANIMAL } from "../actions/types";
+import { REMOVE_ANIMAL,ADD_ANIMAL, SET_ANIMAL } from "../actions/types";
 
 const initialState ={
     animals:{
@@ -33,6 +33,8 @@ const Animal=(state=initialState,action)=>{
                 newState.animals[action.animal]--; 
                 newState.price-=prices[action.animal]
                 break;
+                case SET_ANIMAL:
+                    return { ...action.data };
         default:
             break;
     }
