@@ -4,7 +4,7 @@ const ChacoutForm = ({submitCallback, cancelCallback }) => {
     return (  <form className={classes.ChacoutForm} onSubmit={submitCallback}>
         <div>
         <label for="name" >Name</label>
-        <input type="text" id="name" name="name" placeholder="Alinur"></input>
+        <input type="text" id="name" name="name" required placeholder="Alinur"></input>
         </div>
         <div>
         <label for="phone">Phone</label>
@@ -12,7 +12,7 @@ const ChacoutForm = ({submitCallback, cancelCallback }) => {
         </div>
         <div>
         <label for="address">Address</label>
-        <input type="text" id="address" name="address" placeholder="№25 ctrit Adam"></input>
+        <input type="text" id="address" name="address" required placeholder="№25 ctrit Adam"></input>
         </div>
         
         <Button >Checkout</Button>
