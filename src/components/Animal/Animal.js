@@ -10,12 +10,12 @@ import { useEffect, useState } from "react";
 import { useSelector,useDispatch } from "react-redux";
 import { load } from "../store/actions/Animal";
 const Animal = ({history}) => {
-  const dispatch=useDispatch()
+const dispatch=useDispatch()
 const animals=useSelector(state=>state.Animal.animals);
 const price =useSelector(state=>state.Animal.price);
 const [ordering, setOrdering] = useState(false);
 
-useEffect(()=>dispatch(load()),[dispatch])
+useEffect(() => dispatch(load()), [dispatch]);
 
 
 function startOrdering() {

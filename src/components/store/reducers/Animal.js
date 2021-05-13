@@ -2,12 +2,7 @@ import { REMOVE_ANIMAL,ADD_ANIMAL, SET_ANIMAL } from "../actions/types";
 
 const initialState ={
     animals:{
-        Dog: 1,
-        Cat:1,
-        Turtle:1,
-        Reccoon: 1,
-        Hamster:1, 
-        Chameleon: 1,
+      
     },
     price:342,
 };
