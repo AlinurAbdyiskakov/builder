@@ -2,7 +2,7 @@ import classes from "./AnimalAll.module.css";
 import dogBackground from "../../../imges/about.svg";
 import cat from "../../../imges/help.svg";
 import chameleon from "../../../imges/say.svg";
-import reccoon from "../../../imges/look3.svg";
+import reccoon from "../../../imges/look.svg";
 import turtle from"../../../imges/good.svg";
 import Hamster from "../../../imges/spell1.svg";
 
