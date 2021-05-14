@@ -8,8 +8,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Animal from './components/store/reducers/Animal';
 import orders from './components/store/reducers/orders';
- const rootReduser =combineReducers({Animal,orders});
+
+ const rootReduser = combineReducers({Animal,orders});
  const store = createStore(rootReduser,applyMiddleware(thunk));
+
 ReactDOM.render(
   <React.StrictMode>
    <Provider store={store}>

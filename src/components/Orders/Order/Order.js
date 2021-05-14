@@ -1,7 +1,7 @@
 import classes from "./Order.module.css";
 
 const Order = ({ name, phone, address, animals,price }) => {
-  const output = Object.keys(animals).map(label => <em>{label}: - {animals[label]}</em>)
+  const output = Object.keys(animals).map(label => <em key={label}>{label}: - {animals[label]}</em>)
   return (
     <ul className={classes.Order}>
       <li>Name:<strong>{name}</strong> </li>

@@ -10,7 +10,7 @@ const Orders = () => {
   const orders = useSelector(state => state.orders);
 
   useEffect(() => dispatch(load()), [dispatch]);
-  const results =  orders.map(order => <Order {...order} />);
+  const results =  orders.map(order => <Order key={order.id} {...order} />);
 
   return (
     <div className={classes.Orders}>
