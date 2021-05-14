@@ -1,6 +1,6 @@
 .Toolbar {
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 position: sticky;
 font-family: 'Redressed', cursive; 
 top: 0;
