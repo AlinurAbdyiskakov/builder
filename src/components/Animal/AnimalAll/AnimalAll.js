@@ -8,12 +8,12 @@ import Hamster from "../../../imges/spell1.svg";
 
 const AnimalAll = ({ type ,fixed }) => {
   const types = {
-  Dog: { backgroundImage: `url(${dogBackground})`, width: "60px", height: "60px"},
-  Cat: { backgroundImage: `url(${cat})`, width: "60px", height: "60px" },
-  Chameleon: { backgroundImage: `url(${chameleon})`, width: "60px", height: "60px",},
-  Reccoon: { backgroundImage: `url(${reccoon})`, width: "60px", height: "60px"  },
-  Turtle:{ backgroundImage: `url(${turtle})`, width: "90px", height: "90px"  },
-  Hamster:{ backgroundImage: `url(${Hamster})`, width: "60px", height: "60px"  },
+  dog: { backgroundImage: `url(${dogBackground})`, width: "60px", height: "60px"},
+  cat: { backgroundImage: `url(${cat})`, width: "60px", height: "60px" },
+  chameleon: { backgroundImage: `url(${chameleon})`, width: "60px", height: "60px",},
+  reccoon: { backgroundImage: `url(${reccoon})`, width: "60px", height: "60px"  },
+  turtle:{ backgroundImage: `url(${turtle})`, width: "90px", height: "90px"  },
+  hamster:{ backgroundImage: `url(${Hamster})`, width: "60px", height: "60px"  },
   }
  
   return (

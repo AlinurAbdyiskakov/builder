@@ -7,12 +7,12 @@ const CheckoutSummary = ({submitCallback,cancelCallback}) => {
     <div className={classes.CheckoutSummary}>
     
       <AnimalPreview animals={{
-      Dog: 1,
-      Chameleon: 1,
-      Turtle:1,
+      dog: 1,
+      chameleon: 1,
+      turtle:1,
       Cat:1,
-      Reccoon: 1,
-      Hamster:1,
+      reccoon: 1,
+      hamster:1,
       }} price={342} />
       
      <ChacoutForm

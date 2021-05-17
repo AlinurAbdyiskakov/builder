@@ -1,16 +1,16 @@
 import classes from "./OrderSummary.module.css";
 const OrderSummary = ({ animals, price,}) => {
   const Animal = {
-  Dog: "  Dog  ",
-  Cat:"Cat",
-  Reccoon: "Reccoon",
-  Chameleon: "Chameleon",
-  Hamster:"Hamster",
-  Turtle:"Turtle",
+  dog: "  Dog  ",
+  cat:"Cat",
+  reccoon: "Reccoon",
+  chameleon: "Chameleon",
+  hamster:"Hamster",
+  turtle:"Turtle",
    
   }
   const results = Object.keys(animals)
-    .map(type => <li key={type}>{type}: {animals[type]}</li>);
+    .map(type => <li key={type}>{Animal[type]}: {animals[type]}</li>);
 
   return (
     <div className={classes.OrderSummary}>

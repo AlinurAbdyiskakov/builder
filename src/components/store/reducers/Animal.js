@@ -12,12 +12,12 @@ const initialState = {
 };
 
 const prices = {
-  Dog: 80,
-  Cat: 20,
-  Turtle: 60,
-  Reccoon: 67,
-  Hamster: 45,
-  Chameleon: 70,
+  dog: 80,
+  cat: 20,
+  turtle: 60,
+  reccoon: 67,
+  hamster: 45,
+  chameleon: 70,
 };
 
 

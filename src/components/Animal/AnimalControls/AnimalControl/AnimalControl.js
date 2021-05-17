@@ -6,12 +6,12 @@ import classes from "./AnimalControl.module.css";
 const AnimalControl = ({ type, count }) => {
 const dispatch=useDispatch();
 const names = {
-Dog: "  Dog  ",
-Cat:"Cat",
-Reccoon: "Reccoon",
-Chameleon: "Chameleon",
-Hamster:"Hamster",
-Turtle:"Turtle",
+dog: "  Dog  ",
+cat:"Cat",
+reccoon: "Reccoon",
+chameleon: "Chameleon",
+hamster:"Hamster",
+turtle:"Turtle",
 }
    
   return (
