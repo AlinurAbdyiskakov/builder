@@ -6,8 +6,8 @@ import {createStore,applyMiddleware,combineReducers} from 'redux';
 import thunk from"redux-thunk";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Animal from './components/store/reducers/Animal';
-import orders from './components/store/reducers/orders';
+import Animal from './store/reducers/Animal';
+import orders from './store/reducers/orders';
 
  const rootReduser = combineReducers({Animal,orders});
  const store = createStore(rootReduser,applyMiddleware(thunk));

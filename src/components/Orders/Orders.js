@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { load } from "../store/actions/orders";
+import { load } from "../../store/actions/orders";
 import Order from "./Order/Order";
 import withAxios from "../withAxios";
 import axios from "../../axios";

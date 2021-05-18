@@ -1,5 +1,5 @@
 import { ADD_ANIMAL, REMOVE_ANIMAL, SET_ANIMAL } from "./types";
-import axios from"../../../axios";
+import axios from"../../axios";
 export const add = (animal) => ({
   type: ADD_ANIMAL,
   animal: animal
