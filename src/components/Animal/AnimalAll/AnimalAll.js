@@ -4,7 +4,7 @@ import cat from "../../../imges/help.svg";
 import chameleon from "../../../imges/say.svg";
 import reccoon from "../../../imges/look.svg";
 import turtle from"../../../imges/good.svg";
-import Hamster from "../../../imges/spell1.svg";
+import Hamster from "../../../imges/hamster.svg";
 
 const AnimalAll = ({ type ,fixed }) => {
   const types = {
@@ -13,7 +13,7 @@ const AnimalAll = ({ type ,fixed }) => {
   chameleon: { backgroundImage: `url(${chameleon})`, width: "60px", height: "60px",},
   reccoon: { backgroundImage: `url(${reccoon})`, width: "60px", height: "60px"  },
   turtle:{ backgroundImage: `url(${turtle})`, width: "90px", height: "90px"  },
-  hamster:{ backgroundImage: `url(${Hamster})`, width: "60px", height: "60px"  },
+  hamster:{ backgroundImage: `url(${Hamster})`, width: "70px", height: "70px"  },
   }
  
   return (
