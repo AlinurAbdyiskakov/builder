@@ -6,8 +6,8 @@ import withAxios from "../withAxios";
 import classes from "./Checkout.module.css";
 
 const Checkout = ({ history }) => {
-  const animals = useSelector(state => state.animals.animals);
-  const price = useSelector(state => state.animals.price);
+  const animals = useSelector(state => state.Animal.animals);
+  const price = useSelector(state => state.Animal.price);
 
   function cancelCallback() {
     history.replace('/');
