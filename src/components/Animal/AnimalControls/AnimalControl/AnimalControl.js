@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { add, remove } from "../../../../store/actions/Animal";
+import { add, remove } from "../../../../store/actions/animals";
 import Button from "../../../UI/Button/Button";
 import classes from "./AnimalControl.module.css";
 

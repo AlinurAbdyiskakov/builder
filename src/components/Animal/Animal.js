@@ -8,7 +8,7 @@ import withAxios from "../withAxios";
 import axios from "../../axios";
 import { useEffect, useState } from "react";
 import { useSelector,useDispatch } from "react-redux";
-import { load } from "../../store/actions/Animal";
+import { load } from "../../store/actions/animals";
 const Animal = ({history}) => {
 const dispatch=useDispatch()
 const animals=useSelector(state=>state.Animal.animals);
