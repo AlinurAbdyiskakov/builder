@@ -43,11 +43,6 @@ a:focus {
 outline: none;
 }
 
-.ingredients{
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-}
 
 
 
