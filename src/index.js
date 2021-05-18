@@ -6,10 +6,10 @@ import {createStore,applyMiddleware,combineReducers} from 'redux';
 import thunk from"redux-thunk";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Animal from './store/reducers/animals';
+import animals from './store/reducers/animals';
 import orders from './store/reducers/orders';
 
- const rootReduser = combineReducers({Animal,orders});
+ const rootReduser = combineReducers({animals,orders});
  const store = createStore(rootReduser,applyMiddleware(thunk));
 
 ReactDOM.render(
