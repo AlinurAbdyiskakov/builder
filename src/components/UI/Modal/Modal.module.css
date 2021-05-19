@@ -15,7 +15,7 @@
    */
    .content {
     position: fixed;
-    margin: 0 auto;
+   
     top: 15%;
     left: 30%;
     z-index: 1;
@@ -34,6 +34,7 @@
   
   @media (max-width: 800px) {
     .content {
+       margin: 0 auto;
       width: 80%;
       left: 10%;
     }
