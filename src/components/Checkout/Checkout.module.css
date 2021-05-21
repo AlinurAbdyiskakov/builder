@@ -5,4 +5,5 @@ flex-direction: row;
 flex-wrap: wrap;
 align-items: center;
 overflow-x:hidden;
+flex-direction: column-reverse;
 }

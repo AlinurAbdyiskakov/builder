@@ -33,7 +33,7 @@ const withAxios = (WrappedComponent, axios) => {
     return (
       <>
         <Modal show={error} hideCallback={hideModal}>
-          {error ? error.message : "Unknown error"}
+          {error ? error.message : "Unknown error function"}
         </Modal>
         <WrappedComponent {...props} />
       </>
