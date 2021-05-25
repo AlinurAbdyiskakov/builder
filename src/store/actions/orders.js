@@ -6,11 +6,7 @@ export const set = (data) => ({
   data: data
 });
 
-// export const load = () => {
-//   return (dispatch) => axios
-//     .get('/orders.json')
-//     .then(response => dispatch(set(response.data)));
-// }
+
 export const load = (token, id) => {
   console.log(id)
   return (dispatch) => axios
