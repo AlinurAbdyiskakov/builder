@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-   background-color: rgb(138, 189, 247);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(212,180,50,1) 18%, rgba(187,218,56,1) 42%, rgba(222,60,120,1) 59%, rgba(112,225,63,1) 74%, rgba(90,45,253,1) 100%);
    min-width: 150px;
    min-height: 120px;
     padding: 20px;
@@ -20,7 +20,8 @@ font-family: 'Bebas Neue', cursive;
    justify-content: center;
    align-items: center;
 }
-input{margin-top: 10px;}
+input{margin-top: 10px;
+height: 20px;border-radius: 5px;}
 .color{
     display: flex;
     flex-direction: row;
@@ -30,4 +31,5 @@ input{margin-top: 10px;}
     margin-top: 10px;
     border-radius: 5px;
     height: 30px;
+    font-size: 1rem;
 }
