@@ -13,7 +13,7 @@ const Order = ({ name, phone, address, animals,price }) => {
        <div>@Alinur</div>
     </ul>
  
-    // хамелион черепаха енот кошка хамяк сабака
+    
   );
 }
 
