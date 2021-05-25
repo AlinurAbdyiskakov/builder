@@ -1,4 +1,5 @@
 
+import classes from "./Auth.module.css";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router";
@@ -30,8 +31,8 @@ const Auth = () => {
   }
 
   return (
-    <div >
-      <h1>Welcome</h1>
+    <div className={classes.Auth}>
+      <h1>Welcome to the My builder</h1>
       {errorOutput}
       <form onSubmit={submitCallback}>
         <input type="email" name="email" placeholder="Email" required />
