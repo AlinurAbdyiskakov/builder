@@ -1,18 +1,33 @@
 .Auth{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
    background-color: rgb(138, 189, 247);
    min-width: 150px;
-   min-height: 60px;
+   min-height: 120px;
     padding: 20px;
 border-radius: 15px;
 border: 2px solid green;
 font-family: 'Bebas Neue', cursive;
 }
-.Auth input{
+ .input{
     margin-right: 15px;
-    border-radius: 5px;
-    height: 20px;
+    
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+input{margin-top: 10px;}
+.color{
+    display: flex;
+    flex-direction: row;
+}
+.color button{
+    margin-right: 10px;
     margin-top: 10px;
-   
+    border-radius: 5px;
+    height: 30px;
 }

@@ -34,12 +34,13 @@ const Auth = () => {
     <div className={classes.Auth}>
       <h1>Welcome to the My builder</h1>
       {errorOutput}
-      <form onSubmit={submitCallback}>
+      <form onSubmit={submitCallback} className={classes.input}>
         <input type="email" name="email" placeholder="Email" required />
         <input type="password" name="password" placeholder="Password" required />
+        <div className={classes.color}>
         <button onClick={() => setMethod("signin")} disabled={loading}>Зойти</button>
         <button onClick={() => setMethod("signup")} disabled={loading}>Регистрация</button>
-      </form>
+      </div></form>
       {redirectOutput}
     </div>
   );
