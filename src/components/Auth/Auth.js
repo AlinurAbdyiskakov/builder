@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router";
@@ -29,7 +30,7 @@ const Auth = () => {
   }
 
   return (
-    <div>
+    <div >
       <h1>Welcome</h1>
       {errorOutput}
       <form onSubmit={submitCallback}>
