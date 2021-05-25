@@ -11,6 +11,7 @@ import { useSelector,useDispatch } from "react-redux";
 import { load } from "../../store/actions/animals";
 const Animal = ({history}) => {
 const dispatch=useDispatch()
+const isAuthenticated = useSelector(state => state.auth.token !== null);
 const animals=useSelector(state=>state.Animal.animals);
 const price =useSelector(state=>state.Animal.price);
 const [ordering, setOrdering] = useState(false);
@@ -19,7 +20,12 @@ useEffect(() => dispatch(load()), [dispatch]);
 
 
 function startOrdering() {
-  setOrdering(true);
+  if(isAuthenticated) {
+    setOrdering(true);
+  }
+  else {
+    history.push("/auth");
+  }
 }
 function stopOrdering() {
   setOrdering(false);

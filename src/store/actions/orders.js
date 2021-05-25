@@ -6,8 +6,14 @@ export const set = (data) => ({
   data: data
 });
 
-export const load = () => {
+// export const load = () => {
+//   return (dispatch) => axios
+//     .get('/orders.json')
+//     .then(response => dispatch(set(response.data)));
+// }
+export const load = (token, id) => {
+  console.log(id)
   return (dispatch) => axios
-    .get('/orders.json')
+  .get('/orders.json?auth=' + token + '&orderBy="userId"&equalTo="' + id + '"')
     .then(response => dispatch(set(response.data)));
 }
