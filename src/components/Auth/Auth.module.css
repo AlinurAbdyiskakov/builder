@@ -11,6 +11,12 @@ border-radius: 15px;
 border: 2px solid green;
 font-family: 'Bebas Neue', cursive;
 }
+button{
+  background-color: green;
+  color: white;
+  border: none;
+font-weight: 600;
+}
  .input{
     margin-right: 15px;
     

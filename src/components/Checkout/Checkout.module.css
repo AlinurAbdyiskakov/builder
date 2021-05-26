@@ -4,6 +4,7 @@ justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
 overflow-x:hidden;
+margin: 0 -50px;
 min-height: 0;
 min-width: 0;
 

@@ -57,8 +57,8 @@ const Auth = () => {
       </div> */}
 
         <div className={classes.color}>
-        <button onClick={() => setMethod("signin")} disabled={loading}>Зойти</button>
-        <button onClick={() => setMethod("signup")} disabled={loading}>Регистрация</button>
+        <button onClick={() => setMethod("signin")} disabled={loading}>sign in</button>
+        <button onClick={() => setMethod("signup")} disabled={loading}>sign up</button>
       </div></form>
       {redirectOutput}
     </div>
