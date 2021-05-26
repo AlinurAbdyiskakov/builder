@@ -8,15 +8,10 @@
    min-height: 120px;
     padding: 20px;
 border-radius: 15px;
-border: 2px solid green;
+border: 1px solid black;
 font-family: 'Bebas Neue', cursive;
 }
-button{
-  background-color: green;
-  color: white;
-  border: none;
-font-weight: 600;
-}
+
  .input{
     margin-right: 15px;
     
@@ -28,22 +23,24 @@ font-weight: 600;
 }
 input{margin-top: 10px;
 height: 20px;border-radius: 5px;}
-.color{
-    display: flex;
-    flex-direction: row;
-}
+
 .color button{
     margin-right: 10px;
     margin-top: 10px;
-    border-radius: 5px;
-    height: 30px;
+    padding: 5px;
+    width: 80px;
+    border: none;
+font-size: 30px;
+    border-radius: 35px;
+    font-family: 'Bebas Neue', cursive;
+   background-color: green;color: white;
     font-size: 1rem;
 }
 .Auth h1{
     margin-top: 12px;
     -webkit-animation: pulsing 3s infinite;
     animation: pulsing 3s infinite;
-    }
+    color: white;}
     
       @keyframes pulsing {
         0%{  -webkit-transform: scale(0.7, 0.7);
