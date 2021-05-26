@@ -8,7 +8,7 @@ export const set = (data) => ({
 
 
 export const load = (token, id) => {
-  console.log(id)
+
   return (dispatch) => axios
   .get('/orders.json?auth=' + token + '&orderBy="userId"&equalTo="' + id + '"')
     .then(response => dispatch(set(response.data)));
