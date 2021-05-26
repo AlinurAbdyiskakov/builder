@@ -1,18 +1,12 @@
 .Checkout{
 display: flex;
 justify-content: center;
-
+flex-direction: row;
 flex-wrap: wrap;
 align-items: center;
 overflow-x:hidden;
-
+min-height: 0;
+min-width: 0;
 
 }
 
-@media (max-width: 549px) {
-    .bold{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-  }
