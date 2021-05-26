@@ -19,7 +19,7 @@ z-index: 1;
   transform: translateX(-260px);
 }
 
-@media (min-width: 550px) {
+@media (min-width: 620px) {
   .Drawer {
     z-index: 1;
     display: none;

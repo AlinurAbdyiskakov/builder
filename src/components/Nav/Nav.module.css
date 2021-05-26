@@ -7,7 +7,7 @@
   display: flex;
 }
 
-@media (max-width: 549px) {
+@media (max-width: 620px) {
   .Nav {
     z-index: 1;
   flex-direction: column;
