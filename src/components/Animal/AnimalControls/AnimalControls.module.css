@@ -8,3 +8,9 @@
     font-family: 'Quicksand', sans-serif;
     border: 1px solid black;
 }
+@media (max-width: 550px) {
+    .AnimalControls 
+        {
+    margin: 0px auto;
+    }
+  }

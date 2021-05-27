@@ -14,19 +14,12 @@
   flex-direction: row;
   margin: 0 auto;
 }
-
-/* .Aniall{
-    padding: 25px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* } */
-@media (max-width: 549px) {
+ 
+@media (max-width: 560px) {
   .Animall {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
