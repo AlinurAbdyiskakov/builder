@@ -5,7 +5,7 @@ margin: .5rem 0;
 font-size: 20px;
 font-family: 'Bebas Neue', cursive;
 font-family: 'Kdam Thmor', cursive;
-font-weight: 800;}
+font-weight: 500;}
 
 .Button:disabled{
  opacity: .4;
