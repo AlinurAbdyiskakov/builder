@@ -43,6 +43,7 @@ const Auth = () => {
         <input type="password" name="password" placeholder="Password" required />
  
         </div> 
+     
         {/* <div className="pwd-container">
         <input
           name="pwd"
@@ -62,7 +63,9 @@ const Auth = () => {
         <div className={classes.color}>
         <button onClick={() => setMethod("signin")} disabled={loading}>sign in</button>
         <button onClick={() => setMethod("signup")} disabled={loading}>sign up</button>
-      </div></form>
+      
+      </div>  <div className={classes.help}><a href="https://t.me/alinurabdyiskakov">Help</a>
+      <a href="https://www.google.com/account/about/">forgot password</a></div></form>
       {redirectOutput}
     </div>
   );
