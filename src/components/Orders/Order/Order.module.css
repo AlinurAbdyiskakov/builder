@@ -1,6 +1,6 @@
 
 .Order .som {
-    color: red;
+    color: rgb(12, 75, 12);
     font-size: 25px;
 }
 
@@ -21,6 +21,9 @@
     box-shadow: 0 0 10px black;
 
 }
+strong{font-weight: 600;}
+h4{display: flex;
+flex-direction: column;color:red; }
 
 .Order span {
     font-weight: bold;

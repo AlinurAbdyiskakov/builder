@@ -40,7 +40,9 @@ const Auth = () => {
       <form onSubmit={submitCallback} className={classes.input}>
         <div className={classes.heloo}>
         <input type="email" name="email" placeholder="Email" required />
-        <input type="password" name="password" placeholder="Password" required /></div>
+        <input type="password" name="password" placeholder="Password" required />
+ 
+        </div> 
         {/* <div className="pwd-container">
         <input
           name="pwd"
