@@ -45,7 +45,7 @@ outline: none;
 @media (max-width: 549px) {
     .AnimalPreview 
         {
-    margin: 50px auto;
+    margin: 50px 50px ;
     }
   }
 
