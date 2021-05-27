@@ -10,3 +10,12 @@ min-width: 0;
 
 }
 
+@media (max-width: 620px) {
+    .Checkout {
+display: flex;
+    flex-direction: column-reverse;
+justify-content: center;
+text-align: center;
+    }
+  }
+
