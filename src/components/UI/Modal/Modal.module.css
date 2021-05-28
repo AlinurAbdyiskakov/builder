@@ -12,7 +12,13 @@
     transition: transform .3s ease-out;
 
   }
+  
    */
+   .Modal{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
    .content {
     position: fixed;
    
