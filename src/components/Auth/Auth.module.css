@@ -43,6 +43,9 @@ font-size: 35px;
   background-color: blue;
   border: 1px solid black;
 }
+.color button:active{
+  background-color: red;
+}
 .Auth h1{
     margin-top: 12px;
     -webkit-animation: pulsing 3s infinite;
